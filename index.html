@@ -13,229 +13,249 @@
         <title>Portfolio</title>
     </head>
     <body style="overflow:hidden">
-        <div class="loading position-fixed top-0 bg-dark w-100">
-            <div class="pl1">
-                <div class="pl1__a"></div>
-                <div class="pl1__b"></div>
-                <div class="pl1__c"></div>
-            </div>
-        </div>
-        <div class="li-items-portfolio position-fixed d-flex align-items-center px-4">
-            <ul class="text-center d-flex flex-column p-0 list-unstyled">
-                <li class="d-inline-block rounded-circle my-4 position-relative text-light home" data-section="home" data-scroll>
-                    <ion-icon name="home-outline"></ion-icon>
-                    <div class="hoverd position-absolute text-dark fs-6 fw-bold active posotion-absolute"></div>
-                </li>
-                <li class="d-inline-block rounded-circle my-4 position-relative text-light about" data-section="about" data-scroll>
-                    <ion-icon name="document-outline"></ion-icon>
-                    <div class="hoverd position-absolute text-dark fs-6 fw-bold posotion-absolute"></div>
-                </li>
-                <li class="d-inline-block rounded-circle my-4 position-relative text-light skills" data-section="skills" data-scroll>
-                    <ion-icon name="code-slash-outline"></ion-icon>
-                    <div class="hoverd position-absolute text-dark fs-6 fw-bold posotion-absolute"></div>
-                </li>
-                <li class="d-inline-block rounded-circle my-4 position-relative text-light works" data-section="works" data-scroll>
-                    <ion-icon name="file-tray-full-outline"></ion-icon>
-                    <div class="hoverd position-absolute text-dark fs-6 fw-bold posotion-absolute"></div>
-                </li>
-                <li class="d-inline-block rounded-circle my-4 position-relative text-light contact" data-section="contact" data-scroll>
-                    <ion-icon name="call-outline"></ion-icon>
-                    <div class="hoverd position-absolute text-dark fs-6 fw-bold posotion-absolute"></div>
-                </li>
-            </ul>
-        </div>
-        <div class="portfolio-content position-relative">
-            <div>
-                <div class="navbar d-flex fixed-top p-3">
-                    <div class="toggle-menu-porto d-flex flex-column">
-                       <span class="d-inline-block"></span>
-                       <span class="d-inline-block"></span>
-                       <span class="d-inline-block"></span>
-                    </div>
-                    <div class="dark-light-mode">
-                        <button class="dark-light-button dark" title="dark" onclick="dark_mode(this)"><ion-icon name="moon-outline" class="dark-light"></ion-icon> Dark</button>
-                        <button class="dark-light-button light" title="light" onclick="light_mode(this)"><ion-icon name="sunny-sharp" class="dark-light"></ion-icon></ion-icon> Light</button>
-                    </div>
-                </div>
-                <div class="portfolio-container p-3">
-                    <div class="home-section p-sections position-relative" data-section="home" id="home">
-                        <div class="background-moving position-absolute w-100"><img width="100%" height="100%" src="images/download.png" alt="" data-tilt data-tilt-reverse="true"></div>
-                        <div class="details-home position-relative">
-                            <h4 class="white-color fs-3" data-aos="fade-right"><span class="fs-2">I'M <span class="fw-bold fs-1 text-color">Ahmed Naseem</span></span></h4>
-                            <h5 class="white-color fs-3" data-aos="fade-left">Front End Developer</h5>
-                            <h1 class="text-color" data-aos="fade-up">HEY!</h1>
-                            <a href="#about"><button class="dark-light-button learn-more position-relative overflow-hidden" data-aos="fade-right">Learn More!<span class="rounded-circle position-absolute"><i class="fa fa-chevron-right py-1 px-2"></i></span></button></a>
-                        </div>
-                    </div>
-                    <div class="about-section about-us-section p-sections position-relative" data-section="about" data-aos="fade-up" data-aos-duration="700" data-aos-anchor-placement="top-bottom" id="about">
-                        <div class="container">
-                            <div class="about-us-content d-flex justify-content-center align-items-center">
-                                <div class="details-ahmed-naseem mt-3" data-aos="fade-right">
-                                    <h1 class="white-color my-4">I'M <span class="text-color">AHMED NASEEM</span></h1>
-                                    <p class="white-color-2 fs-4 m-0">independent Front End Developer with +2 years of experience in blending the art of design with skill of programming to deliver an immersive and engaging user experience through efCcient designing and building responsive website with modern Animation, ProCcient with CSS and JS Frameworks.</p>
-                                    <a href="#contact"><button class="dark-light-button my-4 learn-more position-relative overflow-hidden">Contact Me! <span class="rounded-circle position-absolute"><i class="fa fa-chevron-right py-1 px-2"></i></span></button></a>
-                                </div>
-                                <div data-aos="fade-left"><img src="images/picture.jpg" class="rounded-circle w-md-50" width="500px" height="500px" alt=""></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="skills-section p-sections" data-section="skills">
-                        <div class="container">
-                            <h1 class="white-color left-border fw-bold">Skills</h1>
-                            <div class="row">
-                                <div class="col-lg-3 col-md-4 my-3" data-aos="fade-right" data-aos-duration="700" data-aos-anchor-placement="top-bottom" data-tilt data-tilt-reverse="true">
-                                    <div class="dark-color-2 d-flex align-items-center">
-                                        <img src="icons/html5.svg" alt="" width="60px" height="60px">
-                                        <h3 class="mx-3 white-color">HTML5</h3>
-                                    </div>
-                                </div>
-                                <div class="col-lg-3 col-md-4 my-3" data-aos="fade-right" data-aos-duration="700" data-aos-anchor-placement="top-bottom" data-tilt data-tilt-reverse="true">
-                                    <div class="dark-color-2 d-flex align-items-center">
-                                        <img src="icons/css.svg" alt="" width="60px" height="60px">
-                                        <h3 class="mx-3 white-color">CSS</h3>
-                                    </div>
-                                </div>
-                                <div class="col-lg-3 col-md-4 my-3" data-aos="fade-right" data-aos-duration="700" data-aos-anchor-placement="top-bottom" data-tilt data-tilt-reverse="true">
-                                    <div class="dark-color-2 d-flex align-items-center">
-                                        <img src="icons/bootstrap.svg" alt="" width="60px" height="60px">
-                                        <h3 class="mx-3 white-color">Bootstrap</h3>
-                                    </div>
-                                </div>
-                                <div class="col-lg-3 col-md-4 my-3" data-aos="fade-right" data-aos-duration="700" data-aos-anchor-placement="top-bottom" data-tilt data-tilt-reverse="true">
-                                    <div class="dark-color-2 d-flex align-items-center">
-                                        <img src="icons/gulp.svg" alt="" width="60px" height="60px">
-                                        <h3 class="mx-3 white-color">Gulp</h3>
-                                    </div>
-                                </div>
-                                <div class="col-lg-3 col-md-4 my-3" data-aos="fade-right" data-aos-duration="700" data-aos-anchor-placement="top-bottom" data-tilt data-tilt-reverse="true">
-                                    <div class="dark-color-2 d-flex align-items-center">
-                                        <img src="icons/pug.png" alt="" width="80px" height="60px">
-                                        <h3 class="mx-3 white-color">Pugjs</h3>
-                                    </div>
-                                </div>
-                                <div class="col-lg-3 col-md-4 my-3" data-aos="fade-right" data-aos-duration="700" data-aos-anchor-placement="top-bottom" data-tilt data-tilt-reverse="true">
-                                    <div class="dark-color-2 d-flex align-items-center">
-                                        <img src="icons/sass.svg" alt="" width="60px" height="60px">
-                                        <h3 class="mx-3 white-color">Sass</h3>
-                                    </div>
-                                </div>
-                                <div class="col-lg-3 col-md-4 my-3" data-aos="fade-right" data-aos-duration="700" data-aos-anchor-placement="top-bottom" data-tilt data-tilt-reverse="true">
-                                    <div class="dark-color-2 d-flex align-items-center">
-                                        <img src="icons/js.svg" alt="" width="60px" height="60px">
-                                        <h3 class="mx-3 white-color">JS</h3>
-                                    </div>
-                                </div>
-                                <div class="col-lg-3 col-md-4 my-3" data-aos="fade-right" data-aos-duration="700" data-aos-anchor-placement="top-bottom" data-tilt data-tilt-reverse="true">
-                                    <div class="dark-color-2 d-flex align-items-center">
-                                        <img src="icons/github.svg" alt="" width="60px" height="60px">
-                                        <h3 class="mx-3 white-color">Git</h3>
-                                    </div>
-                                </div>
-                                <div class="col-lg-3 col-md-4 my-3" data-aos="fade-right" data-aos-duration="700" data-aos-anchor-placement="top-bottom" data-tilt data-tilt-reverse="true">
-                                    <div class="dark-color-2 d-flex align-items-center">
-                                        <img src="icons/vue.png" alt="" width="60px" height="60px">
-                                        <h3 class="mx-3 white-color">VUE JS</h3>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="works-section p-sections" data-section="works">
-                        <div class="container">
-                            <h1 class="white-color left-border fw-bold">Works</h1>
-                            <div class="works-section-content mt-4">
-                                <div class="position-relative overflow-hidden" data-aos="fade-up" data data-tilt data-tilt-reverse="true">
-                                    <img src="images/2.png" alt="" width="100%" class="rounded">
-                                    <div class="hidden position-absolute top-0 w-100 rounded">
-                                        <div class="text-center">
-                                            <h4>TFT VIP TRADE</h4>
-                                            <a href="https://tftviptrade.com" target="_blank"><button class="dark-light-button">Live Demo</button></a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="position-relative overflow-hidden" data-aos="fade-up">
-                                    <img src="images/7.png" alt="" width="100%" class="rounded">
-                                    <div class="hidden position-absolute top-0 w-100 rounded">
-                                        <div class="text-center">
-                                            <h4>Educational site</h4>
-                                            <a href="https://education-31na9bj0a-anaseem80.vercel.app/" target="_blank"><button class="dark-light-button">Live Demo</button></a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="position-relative overflow-hidden" data-aos="fade-up">
-                                    <img src="images/1.png" alt="" width="100%" class="rounded">
-                                    <div class="hidden position-absolute top-0 w-100 rounded">
-                                        <div class="text-center">
-                                            <h4>Qurankareem</h4>
-                                            <a href="https://qurankareem.vercel.app/" target="_blank"><button class="dark-light-button">Live Demo</button></a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="position-relative overflow-hidden" data-aos="fade-up">
-                                    <img src="images/5.png" alt="" width="100%" class="rounded">
-                                    <div class="hidden position-absolute top-0 w-100 rounded">
-                                        <div class="text-center">
-                                            <h4>E-Commerce Site</h4>
-                                            <a href="https://ecommerce-o6nms2u85-anaseem80.vercel.app/" target="_blank"><button class="dark-light-button">Live Demo</button></a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="position-relative overflow-hidden" data-aos="fade-up">
-                                    <img src="images/3.png" alt="" width="100%" class="rounded">
-                                    <div class="hidden position-absolute top-0 w-100 rounded">
-                                        <div class="text-center">
-                                            <h4>Arab medicine site</h4>
-                                            <a href="https://arabmedicne.online" target="_blank"><button class="dark-light-button">Live Demo</button></a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="position-relative overflow-hidden" data-aos="fade-up">
-                                    <img src="images/4.png" alt="" width="100%" class="rounded">
-                                    <div class="hidden position-absolute top-0 w-100 rounded">
-                                        <div class="text-center">
-                                            <h4>Beinsport site</h4>
-                                            <a href="https://www.beinsportsgulf.com/" target="_blank"><button class="dark-light-button">Live Demo</button></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="contact-section p-sections" id="contact" data-section="contact">
-                        <div class="container">
-                            <h1 class="white-color left-border fw-bold">Contact Me</h1>
-                            <div class="row">
-                                <div class="col-lg-6 rounded my-3" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
-                                    <div class="d-flex flex-wrap contact-details flex-column rounded">
-                                        <div class="white-color d-flex fw-bold fs-3"><ion-icon name="call-outline" class="p-2 rounded-circle me-3"></ion-icon> PHONE</div>
-                                        <p class="white-color m-0 fw-bold ms-5">+20 1159614802</p>
-                                    </div>
-                                </div>
-                                <div class="col-lg-6 rounded my-3" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
-                                    <div class="d-flex flex-wrap contact-details flex-column rounded">
-                                        <div class="white-color d-flex fw-bold fs-3"><ion-icon name="mail-outline" class="p-2 rounded-circle me-3"></ion-icon> EMAIL</div>
-                                        <p class="white-color m-0 fw-bold ms-5">anaseemamin@gmail.com</p>
-                                    </div>
-                                </div>
-                                <div class="col-lg-12 rounded my-3" data-aos="fade-down" data-aos-anchor-placement="top-bottom">
-                                    <div class="d-flex flex-wrap contact-details flex-column rounded">
-                                        <div class="white-color d-flex fw-bold fs-3"><ion-icon name="location-outline" class="p-2 rounded-circle me-3"></ion-icon> Location</div>
-                                        <p class="white-color m-0 fw-bold ms-5">Egypt - Giza</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="social-links text-center mt-5">
-                                <a href="https://www.facebook.com/profile.php?id=100004560580949" target="_blank" class="rounded-circle position-relative text-decoration-none bg-primary me-2" title="facebook"><ion-icon name="logo-facebook" class="text-light"></ion-icon></a>
-                                <a href="http://wasap.my/01159614802" target="_blank" class="rounded-circle position-relative text-decoration-none bg-success me-2" title="whatsapp"><ion-icon name="logo-whatsapp" class="text-light"></ion-icon></a>
-                                <a href="mailto:anaseemamin@gmail.com" target="_blank" class="rounded-circle position-relative text-decoration-none bg-danger me-2" title="mail"><ion-icon name="mail-outline" class="text-light"></ion-icon></a>
-                                <a href="tel:01159614802" class="rounded-circle position-relative text-decoration-none bg-warning" title="call me"><ion-icon name="call-outline" class="text-dark"></ion-icon></a>
-                            </div>
-                        </div>
-                    </div>
+        <div class="main-wrapper">
+            <div class="loading position-fixed top-0 bg-dark w-100">
+                <div class="pl1">
+                    <div class="pl1__a"></div>
+                    <div class="pl1__b"></div>
+                    <div class="pl1__c"></div>
                 </div>
             </div>
+            <div class="li-items-portfolio position-fixed d-flex align-items-center px-4">
+                <ul class="text-center d-flex flex-column p-0 list-unstyled">
+                    <li class="d-inline-block rounded-circle my-4 position-relative text-light home" data-section="home" data-scroll>
+                        <ion-icon name="home-outline"></ion-icon>
+                        <div class="hoverd position-absolute text-dark fs-6 fw-bold active posotion-absolute"></div>
+                    </li>
+                    <li class="d-inline-block rounded-circle my-4 position-relative text-light about" data-section="about" data-scroll>
+                        <ion-icon name="document-outline"></ion-icon>
+                        <div class="hoverd position-absolute text-dark fs-6 fw-bold posotion-absolute"></div>
+                    </li>
+                    <li class="d-inline-block rounded-circle my-4 position-relative text-light skills" data-section="skills" data-scroll>
+                        <ion-icon name="code-slash-outline"></ion-icon>
+                        <div class="hoverd position-absolute text-dark fs-6 fw-bold posotion-absolute"></div>
+                    </li>
+                    <li class="d-inline-block rounded-circle my-4 position-relative text-light works" data-section="works" data-scroll>
+                        <ion-icon name="file-tray-full-outline"></ion-icon>
+                        <div class="hoverd position-absolute text-dark fs-6 fw-bold posotion-absolute"></div>
+                    </li>
+                    <li class="d-inline-block rounded-circle my-4 position-relative text-light contact" data-section="contact" data-scroll>
+                        <ion-icon name="call-outline"></ion-icon>
+                        <div class="hoverd position-absolute text-dark fs-6 fw-bold posotion-absolute"></div>
+                    </li>
+                </ul>
+            </div>
+            <div class="portfolio-content position-relative">
+                <div>
+                    <div class="navbar d-flex fixed-top p-3">
+                        <div class="toggle-menu-porto d-flex flex-column">
+                           <span class="d-inline-block"></span>
+                           <span class="d-inline-block"></span>
+                           <span class="d-inline-block"></span>
+                        </div>
+                        <div class="dark-light-mode">
+                            <button class="dark-light-button dark" title="dark" onclick="dark_mode(this)"><ion-icon name="moon-outline" class="dark-light"></ion-icon> Dark</button>
+                            <button class="dark-light-button light" title="light" onclick="light_mode(this)"><ion-icon name="sunny-sharp" class="dark-light"></ion-icon></ion-icon> Light</button>
+                        </div>
+                    </div>
+                    <div class="portfolio-container p-3">
+                        <div class="home-section p-sections position-relative" data-section="home" id="home">
+                            <div class="background-moving position-absolute w-100"><img width="100%" height="100%" src="images/download.png" alt="" data-tilt data-tilt-reverse="true"></div>
+                            <div class="details-home position-relative">
+                                <h4 class="white-color fs-3" data-aos="fade-right"><span class="fs-2">I'M <span class="fw-bold fs-1 text-color">Ahmed Naseem</span></span></h4>
+                                <h5 class="white-color fs-3" data-aos="fade-left">Front End Developer</h5>
+                                <h1 class="text-color" data-aos="fade-up">HEY!</h1>
+                                <a href="#about"><button class="dark-light-button learn-more position-relative overflow-hidden" data-aos="fade-right">Learn More!<span class="rounded-circle position-absolute"><i class="fa fa-chevron-right py-1 px-2"></i></span></button></a>
+                            </div>
+                        </div>
+                        <div class="about-section about-us-section p-sections position-relative" data-section="about" data-aos="fade-up" data-aos-duration="700" data-aos-anchor-placement="top-bottom" id="about">
+                            <div class="container">
+                                <div class="about-us-content d-flex justify-content-center align-items-center">
+                                    <div class="details-ahmed-naseem mt-3" data-aos="fade-right">
+                                        <h1 class="white-color my-4">I'M <span class="text-color">AHMED NASEEM</span></h1>
+                                        <p class="white-color-2 fs-4 m-0">independent Front End Developer with +2 years of experience in blending the art of design with skill of programming to deliver an immersive and engaging user experience through efCcient designing and building responsive website with modern Animation, ProCcient with CSS and JS Frameworks.</p>
+                                        <a href="#contact"><button class="dark-light-button my-4 learn-more position-relative overflow-hidden">Contact Me! <span class="rounded-circle position-absolute"><i class="fa fa-chevron-right py-1 px-2"></i></span></button></a>
+                                    </div>
+                                    <div data-aos="fade-left"><img src="images/picture.jpg" class="rounded-circle w-md-50" width="500px" height="500px" alt=""></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skills-section p-sections" data-section="skills">
+                            <div class="container">
+                                <h1 class="white-color left-border fw-bold">Skills</h1>
+                                <div class="row">
+                                    <div class="col-lg-3 col-md-4 my-3" data-aos="fade-right" data-aos-duration="700" data-aos-anchor-placement="top-bottom" data-tilt data-tilt-reverse="true">
+                                        <div class="dark-color-2 d-flex align-items-center">
+                                            <img src="icons/html5.svg" alt="" width="60px" height="60px">
+                                            <h3 class="mx-3 white-color">HTML5</h3>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-md-4 my-3" data-aos="fade-right" data-aos-duration="700" data-aos-anchor-placement="top-bottom" data-tilt data-tilt-reverse="true">
+                                        <div class="dark-color-2 d-flex align-items-center">
+                                            <img src="icons/css.svg" alt="" width="60px" height="60px">
+                                            <h3 class="mx-3 white-color">CSS</h3>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-md-4 my-3" data-aos="fade-right" data-aos-duration="700" data-aos-anchor-placement="top-bottom" data-tilt data-tilt-reverse="true">
+                                        <div class="dark-color-2 d-flex align-items-center">
+                                            <img src="icons/bootstrap.svg" alt="" width="60px" height="60px">
+                                            <h3 class="mx-3 white-color">Bootstrap</h3>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-md-4 my-3" data-aos="fade-right" data-aos-duration="700" data-aos-anchor-placement="top-bottom" data-tilt data-tilt-reverse="true">
+                                        <div class="dark-color-2 d-flex align-items-center">
+                                            <img src="icons/gulp.svg" alt="" width="60px" height="60px">
+                                            <h3 class="mx-3 white-color">Gulp</h3>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-md-4 my-3" data-aos="fade-right" data-aos-duration="700" data-aos-anchor-placement="top-bottom" data-tilt data-tilt-reverse="true">
+                                        <div class="dark-color-2 d-flex align-items-center">
+                                            <img src="icons/pug.png" alt="" width="80px" height="60px">
+                                            <h3 class="mx-3 white-color">Pugjs</h3>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-md-4 my-3" data-aos="fade-right" data-aos-duration="700" data-aos-anchor-placement="top-bottom" data-tilt data-tilt-reverse="true">
+                                        <div class="dark-color-2 d-flex align-items-center">
+                                            <img src="icons/sass.svg" alt="" width="60px" height="60px">
+                                            <h3 class="mx-3 white-color">Sass</h3>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-md-4 my-3" data-aos="fade-right" data-aos-duration="700" data-aos-anchor-placement="top-bottom" data-tilt data-tilt-reverse="true">
+                                        <div class="dark-color-2 d-flex align-items-center">
+                                            <img src="icons/js.svg" alt="" width="60px" height="60px">
+                                            <h3 class="mx-3 white-color">JS</h3>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-md-4 my-3" data-aos="fade-right" data-aos-duration="700" data-aos-anchor-placement="top-bottom" data-tilt data-tilt-reverse="true">
+                                        <div class="dark-color-2 d-flex align-items-center">
+                                            <img src="icons/github.svg" alt="" width="60px" height="60px">
+                                            <h3 class="mx-3 white-color">Git</h3>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-md-4 my-3" data-aos="fade-right" data-aos-duration="700" data-aos-anchor-placement="top-bottom" data-tilt data-tilt-reverse="true">
+                                        <div class="dark-color-2 d-flex align-items-center">
+                                            <img src="icons/vue.png" alt="" width="60px" height="60px">
+                                            <h3 class="mx-3 white-color">VUE JS</h3>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="works-section p-sections" data-section="works">
+                            <div class="container">
+                                <h1 class="white-color left-border fw-bold">Works</h1>
+                                <div class="works-section-content mt-4">
+                                    <div class="position-relative overflow-hidden rounded" data-aos="fade-up" data data-tilt data-tilt-reverse="true">
+                                        <img src="images/pisti.png" alt="" width="100%" class="rounded">
+                                        <div class="hidden position-absolute top-0 w-100 rounded">
+                                            <div class="text-center">
+                                                <h4>PISTI</h4>
+                                                <a href="https://pisti.ae" target="_blank"><button class="dark-light-button">Live Demo</button></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="position-relative overflow-hidden rounded" data-aos="fade-up" data data-tilt data-tilt-reverse="true">
+                                        <img src="images/4.png" alt="" width="100%" class="rounded">
+                                        <div class="hidden position-absolute top-0 w-100 rounded">
+                                            <div class="text-center">
+                                                <h4>Beinsport site</h4>
+                                                <a href="https://www.beinsportsgulf.com/" target="_blank"><button class="dark-light-button">Live Demo</button></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="position-relative overflow-hidden rounded"   data data-tilt data-tilt-reverse="true">
+                                        <img src="images/tt.png" alt="" width="100%" class="rounded">
+                                        <div class="hidden position-absolute top-0 w-100 rounded">
+                                            <div class="text-center">
+                                                <h4>Tonsetech</h4>
+                                                <a href="https://tonsetech.com/demo/ttweb" target="_blank"><button class="dark-light-button">Live Demo</button></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="position-relative overflow-hidden rounded" data-aos="fade-up" data data-tilt data-tilt-reverse="true">
+                                        <img src="images/btech.png" alt="" width="100%" class="rounded">
+                                        <div class="hidden position-absolute top-0 w-100 rounded">
+                                            <div class="text-center">
+                                                <h4>BusinessTech</h4>
+                                                <a href="https://tonsetech.com/demo/btech/" target="_blank"><button class="dark-light-button">Live Demo</button></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="position-relative overflow-hidden rounded" data-aos="fade-up" data data-tilt data-tilt-reverse="true">
+                                        <img src="images/tft.png" alt="" width="100%" class="rounded">
+                                        <div class="hidden position-absolute top-0 w-100 rounded">
+                                            <div class="text-center">
+                                                <h4>TFT VIP TRADE</h4>
+                                                <a href="https://tftviptrade.com" target="_blank"><button class="dark-light-button">Live Demo</button></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="position-relative overflow-hidden rounded" data-aos="fade-up" data data-tilt data-tilt-reverse="true">
+                                        <img src="images/Oudz.png" alt="" width="100%" class="rounded">
+                                        <div class="hidden position-absolute top-0 w-100 rounded">
+                                            <div class="text-center">
+                                                <h4>Perfume site</h4>
+                                                <a href="https://oudz.ae" target="_blank"><button class="dark-light-button">Live Demo</button></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="position-relative overflow-hidden rounded" data-aos="fade-up" data data-tilt data-tilt-reverse="true">
+                                        <img src="images/By7amda.png" alt="" width="100%" class="rounded">
+                                        <div class="hidden position-absolute top-0 w-100 rounded">
+                                            <div class="text-center">
+                                                <h4>Clothes site</h4>
+                                                <a href="https://by7amda.com/" target="_blank"><button class="dark-light-button">Live Demo</button></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="position-relative overflow-hidden rounded" data-aos="fade-up" data data-tilt data-tilt-reverse="true">
+                                        <img src="images/limo.png" alt="" width="100%" class="rounded">
+                                        <div class="hidden position-absolute top-0 w-100 rounded">
+                                            <div class="text-center">
+                                                <h4>Cake site</h4>
+                                                <a href="https://limogesd.com/" target="_blank"><button class="dark-light-button">Live Demo</button></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="contact-section p-sections" id="contact" data-section="contact">
+                            <div class="container">
+                                <h1 class="white-color left-border fw-bold">Contact Me</h1>
+                                <div class="row">
+                                    <div class="col-lg-6 rounded my-3" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+                                        <div class="d-flex flex-wrap contact-details flex-column rounded">
+                                            <div class="white-color d-flex fw-bold fs-3"><ion-icon name="call-outline" class="p-2 rounded-circle me-3"></ion-icon> PHONE</div>
+                                            <p class="white-color m-0 fw-bold ms-5">+20 1159614802</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 rounded my-3" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+                                        <div class="d-flex flex-wrap contact-details flex-column rounded">
+                                            <div class="white-color d-flex fw-bold fs-3"><ion-icon name="mail-outline" class="p-2 rounded-circle me-3"></ion-icon> EMAIL</div>
+                                            <p class="white-color m-0 fw-bold ms-5">anaseemamin@gmail.com</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-12 rounded my-3" data-aos="fade-down" data-aos-anchor-placement="top-bottom">
+                                        <div class="d-flex flex-wrap contact-details flex-column rounded">
+                                            <div class="white-color d-flex fw-bold fs-3"><ion-icon name="location-outline" class="p-2 rounded-circle me-3"></ion-icon> Location</div>
+                                            <p class="white-color m-0 fw-bold ms-5">Egypt - Giza</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="social-links text-center mt-5">
+                                    <a href="https://www.facebook.com/profile.php?id=100004560580949" target="_blank" class="rounded-circle position-relative text-decoration-none bg-primary me-2" title="facebook"><ion-icon name="logo-facebook" class="text-light"></ion-icon></a>
+                                    <a href="http://wasap.my/01159614802" target="_blank" class="rounded-circle position-relative text-decoration-none bg-success me-2" title="whatsapp"><ion-icon name="logo-whatsapp" class="text-light"></ion-icon></a>
+                                    <a href="mailto:anaseemamin@gmail.com" target="_blank" class="rounded-circle position-relative text-decoration-none bg-danger me-2" title="mail"><ion-icon name="mail-outline" class="text-light"></ion-icon></a>
+                                    <a href="tel:01159614802" class="rounded-circle position-relative text-decoration-none bg-warning" title="call me"><ion-icon name="call-outline" class="text-dark"></ion-icon></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <a href="#home"><div class="scroll-top text-color rounded-circle position-fixed py-1 px-2"><i class="fa fa-chevron-up text-light position-relative" style="z-index: 1000;"></i></div></a>
+        <a href="#home"><div class="scroll-top text-color position-fixed py-1 px-2"><i class="fa fa-chevron-up text-light position-relative" style="z-index: 1000;"></i></div></a>
         <script src="https://kit.fontawesome.com/a1a75d5546.js" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"></script>

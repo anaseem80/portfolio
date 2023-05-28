@@ -162,6 +162,8 @@ ion-icon {
 .about-us-section .about-us-content .details-ahmed-naseem{
     margin-right: 40px; }
 .works-section-content > div{
+    height: 200px;
+    overflow: hidden;
     box-shadow: 11px 10px 22px -23px var(--black-color) ;}
 @media(max-width:992px){
     .about-us-section img{
