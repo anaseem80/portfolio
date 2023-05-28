@@ -215,6 +215,7 @@ ion-icon {
 .text-color{
     color:var(--main-color) !important;}
 .white-color-2{
+    text-align: justify;
     color:var(--white-color-2) !important;
     font-weight: 500;}
 .white-color{
