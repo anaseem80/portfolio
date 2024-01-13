@@ -1,278 +1,1841 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zxx">
     <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <script type="module" src="https://unpkg.com/ionicons@5.1.2/dist/ionicons/ionicons.esm.js"></script>
-        <script nomodule="" src="https://unpkg.com/ionicons@5.1.2/dist/ionicons/ionicons.js"></script>
-        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
-        <link rel="stylesheet" href="css/style.css">
-        <link rel="shortcut icon" href="icons/8b167af653c2399dd93b952a48740620.jpg" type="image/x-icon">
-        <title>Portfolio</title>
+
+        <!-- Meta tag -->
+        <meta charset="utf-8" />
+        <title>Poliox - Personal Portfolio HTML Template</title>
+        <meta name="description" content="" />
+        <meta http-equiv="x-ua-compatible" content="ie=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <!-- Favicon -->
+        <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+        <link rel="shortcut icon" type="image/x-icon" href="assets/images/fav.png" />
+        <!-- Bootstrap  v5.1.3 css -->
+        <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+        <!-- Sal css -->
+        <link rel="stylesheet" type="text/css" href="assets/css/sal.css" />
+        <!-- Magnific-popup css -->
+        <link rel="stylesheet" type="text/css" href="assets/css/magnific-popup.css" />
+        <!-- Swiper css -->
+        <link rel="stylesheet" type="text/css" href="assets/css/swiper.min.css" />
+        <!-- Ico-fonts css -->
+        <link rel="stylesheet" type="text/css" href="assets/css/ico-fonts.css" />
+        <!-- Remixicon css -->
+        <link rel="stylesheet" type="text/css" href="assets/fonts/remixicon.css" />
+        <!-- Odometer css -->
+        <link rel="stylesheet" type="text/css" href="assets/css/odometer.min.css" />
+        <!-- style css -->
+        <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+        <!-- toaster css -->
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.min.css">
+        <!-- Email js -->
+        <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3.2.0/dist/email.min.js"></script>
+        <script>
+            (function() {
+                emailjs.init("1iK7qrr0FB9GzDMgn")
+            })();
+        </script> 
     </head>
-    <body style="overflow:hidden">
-        <div class="main-wrapper">
-            <div class="loading position-fixed top-0 bg-dark w-100">
-                <div class="pl1">
-                    <div class="pl1__a"></div>
-                    <div class="pl1__b"></div>
-                    <div class="pl1__c"></div>
+    <body>
+        <!-- preloader -->
+        <div id="preloader" class="preloader">
+            <div class="animation-preloader">
+                <div class="spinner">
+                    <div class="loader-icon">
+                        <img src="assets/images/fav.png" alt="Corporate Business HTML Template" />
+                    </div>
+                </div>
+                <div class="txt-loading">
+                    <span data-text-preloader="N" class="letters-loading"> N </span>
+                    <span data-text-preloader="A" class="letters-loading"> A </span>
+                    <span data-text-preloader="S" class="letters-loading"> S </span>
+                    <span data-text-preloader="E" class="letters-loading"> E </span>
+                    <span data-text-preloader="E" class="letters-loading"> E </span>
+                    <span data-text-preloader="M" class="letters-loading"> M </span>
                 </div>
             </div>
-            <div class="li-items-portfolio position-fixed d-flex align-items-center px-4">
-                <ul class="text-center d-flex flex-column p-0 list-unstyled">
-                    <li class="d-inline-block rounded-circle my-4 position-relative text-light home" data-section="home" data-scroll>
-                        <ion-icon name="home-outline"></ion-icon>
-                        <div class="hoverd position-absolute text-dark fs-6 fw-bold active posotion-absolute"></div>
-                    </li>
-                    <li class="d-inline-block rounded-circle my-4 position-relative text-light about" data-section="about" data-scroll>
-                        <ion-icon name="document-outline"></ion-icon>
-                        <div class="hoverd position-absolute text-dark fs-6 fw-bold posotion-absolute"></div>
-                    </li>
-                    <li class="d-inline-block rounded-circle my-4 position-relative text-light skills" data-section="skills" data-scroll>
-                        <ion-icon name="code-slash-outline"></ion-icon>
-                        <div class="hoverd position-absolute text-dark fs-6 fw-bold posotion-absolute"></div>
-                    </li>
-                    <li class="d-inline-block rounded-circle my-4 position-relative text-light works" data-section="works" data-scroll>
-                        <ion-icon name="file-tray-full-outline"></ion-icon>
-                        <div class="hoverd position-absolute text-dark fs-6 fw-bold posotion-absolute"></div>
-                    </li>
-                    <li class="d-inline-block rounded-circle my-4 position-relative text-light contact" data-section="contact" data-scroll>
-                        <ion-icon name="call-outline"></ion-icon>
-                        <div class="hoverd position-absolute text-dark fs-6 fw-bold posotion-absolute"></div>
-                    </li>
-                </ul>
-            </div>
-            <div class="portfolio-content position-relative">
-                <div>
-                    <div class="navbar d-flex fixed-top p-3">
-                        <div class="toggle-menu-porto d-flex flex-column">
-                           <span class="d-inline-block"></span>
-                           <span class="d-inline-block"></span>
-                           <span class="d-inline-block"></span>
+        </div>
+        <!-- welcome content start from here -->
+
+        <!--========== Header Section Start ==============-->
+        <header class="sc-header-section" id="sc-header-sticky">
+            <!-- Header Section Start -->
+            <div class="sc-header-content">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-lg-3 col-md-4 col-sm-5 col-5">
+                            <div class="header-logo-area">
+                                <div class="sc-header-logo">
+                                    <a href="index.html"><img src="assets/images/logo.png" alt="Logo" /></a>
+                                </div>
+                                <!-- <div class="sc-hambagur-icon sc-pl-30">
+                                    <a id="canva_expander" href="#" class="nav-menu-link menu-button">
+                                        <img src="assets/images/icon/ham.svg" alt="Icon" />
+                                    </a>
+                                </div> -->
+                            </div>
                         </div>
-                        <div class="dark-light-mode">
-                            <button class="dark-light-button dark" title="dark" onclick="dark_mode(this)"><ion-icon name="moon-outline" class="dark-light"></ion-icon> Dark</button>
-                            <button class="dark-light-button light" title="light" onclick="light_mode(this)"><ion-icon name="sunny-sharp" class="dark-light"></ion-icon></ion-icon> Light</button>
+                        <div class="col-lg-6 col-md-4 col-sm-2 col-2">
+                            <div class="sc-main-menu d-lg-block d-none text-center">
+                                <!-- Mainmenu Section Start -->
+                                <ul class="list-gap main-menu">
+                                    <li class="current-menu-item menu-item-has-children">
+                                        <a class="active" href="index.html">Home</a>
+                                    </li>
+                                    <li><a href="#scroll-about">About</a></li>
+                                    <li><a href="#scroll-portfolio">Portfolio</a></li>
+                                    <li><a class="last-none" href="#scroll-contact">Contact</a></li>
+                                </ul>
+                                <!-- Mainmenu Section End -->
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-5 col-5">
+                            <div class="sc-menu-select-box d-flex align-items-center justify-content-end">
+                                <div class="header-button sc-pl-20 sc-md-pl-20">
+                                    <a class="sc-header-btn" href="#scroll-contact"
+                                        >Let's Talk <i class="ri-chat-1-line"></i
+                                    ></a>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div class="portfolio-container p-3">
-                        <div class="home-section p-sections position-relative" data-section="home" id="home">
-                            <div class="background-moving position-absolute w-100"><img width="100%" height="100%" src="images/download.png" alt="" data-tilt data-tilt-reverse="true"></div>
-                            <div class="details-home position-relative">
-                                <h4 class="white-color fs-3" data-aos="fade-right"><span class="fs-2">I'M <span class="fw-bold fs-1 text-color">Ahmed Naseem</span></span></h4>
-                                <h5 class="white-color fs-3" data-aos="fade-left">Front End Developer</h5>
-                                <h1 class="text-color" data-aos="fade-up">HEY!</h1>
-                                <a href="#about"><button class="dark-light-button learn-more position-relative overflow-hidden" data-aos="fade-right">Learn More!<span class="rounded-circle position-absolute"><i class="fa fa-chevron-right py-1 px-2"></i></span></button></a>
-                            </div>
-                        </div>
-                        <div class="about-section about-us-section p-sections position-relative" data-section="about" data-aos="fade-up" data-aos-duration="700" data-aos-anchor-placement="top-bottom" id="about">
-                            <div class="container">
-                                <div class="about-us-content d-flex justify-content-center align-items-center">
-                                    <div class="details-ahmed-naseem mt-3" data-aos="fade-right">
-                                        <h1 class="white-color my-4">I'M <span class="text-color">AHMED NASEEM</span></h1>
-                                        <p class="white-color-2 fs-4 m-0">independent Front End Developer with +3 years of experience in blending the art of design with skill of programming to deliver an immersive and engaging user experience through efCcient designing and building responsive website with modern Animation, ProCcient with CSS and JS Frameworks.</p>
-                                        <a href="#contact"><button class="dark-light-button my-4 learn-more position-relative overflow-hidden">Contact Me! <span class="rounded-circle position-absolute"><i class="fa fa-chevron-right py-1 px-2"></i></span></button></a>
+                </div>
+            </div>
+        </header>
+        <!--========== Header Section End ==============-->
+
+        <div id="smooth-wrapper">
+            <div id="smooth-content">
+                <main>
+                <!--========== Banner Section Start ==============-->
+                <div class="banner-section sc-md-pt-75">
+                    <div class="container banner-container">
+                        <div class="row align-items-center">
+                            <div class="col-lg-7">
+                                <div class="banner-left-content">
+                                    <span class="sub-title sc-animation1"> Hello, ✌️ I'm Ahmed Naseem</span>
+                                    <h2 class="banner-title sc-animation2 white-Color sc-mb-10">
+                                        Independent<br />
+                                        <span class="active-color"> Frontend Developer </span>
+                                    </h2>
+                                    <div class="sc-animation6 sc-mb-30">
+                                        <img src="assets/images/icon/broder.svg" alt="Image" />
                                     </div>
-                                    <div data-aos="fade-left"><img src="images/picture.jpg" class="rounded-circle w-md-50" width="500px" height="500px" alt=""></div>
+                                    <p class="desc sc-animation3 sc-mb-40">
+                                        Work with brands and businesses from all around the world to create high quality
+                                        design and engaging experiences.
+                                    </p>
+                                    <div class="banner-button sc-animation4 p-z-idex">
+                                        <a class="sc-primary-btn" href="assets/images/cv.pdf" download=""
+                                            >Download CV <i class="ri-arrow-right-line"></i
+                                        ></a>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="skills-section p-sections" data-section="skills">
-                            <div class="container">
-                                <h1 class="white-color left-border fw-bold">Skills</h1>
-                                <div class="row">
-                                    <div class="col-lg-3 col-md-4 my-3" data-aos="fade-right" data-aos-duration="700" data-aos-anchor-placement="top-bottom" data-tilt data-tilt-reverse="true">
-                                        <div class="dark-color-2 d-flex align-items-center">
-                                            <img src="icons/html5.svg" alt="" width="60px" height="60px">
-                                            <h3 class="mx-3 white-color">HTML5</h3>
+                            <div class="col-lg-5">
+                                <div class="banner-wrapper text-end sc-animation5">
+                                    <img class="sc-mt-30 sc-mb-50" src="assets/images/project/banner.png" alt="Image" />
+                                    <div class="poliox-circule">
+                                        <img class="circule-1" src="assets/images/icon/circule.png" alt="Image" />
+                                        <div class="portal-icon">
+                                            <img class="portal" src="assets/images/icon/portal.svg" alt="Icon" />
                                         </div>
                                     </div>
-                                    <div class="col-lg-3 col-md-4 my-3" data-aos="fade-right" data-aos-duration="700" data-aos-anchor-placement="top-bottom" data-tilt data-tilt-reverse="true">
-                                        <div class="dark-color-2 d-flex align-items-center">
-                                            <img src="icons/css.svg" alt="" width="60px" height="60px">
-                                            <h3 class="mx-3 white-color">CSS</h3>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-3 col-md-4 my-3" data-aos="fade-right" data-aos-duration="700" data-aos-anchor-placement="top-bottom" data-tilt data-tilt-reverse="true">
-                                        <div class="dark-color-2 d-flex align-items-center">
-                                            <img src="icons/bootstrap.svg" alt="" width="60px" height="60px">
-                                            <h3 class="mx-3 white-color">Bootstrap</h3>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-3 col-md-4 my-3" data-aos="fade-right" data-aos-duration="700" data-aos-anchor-placement="top-bottom" data-tilt data-tilt-reverse="true">
-                                        <div class="dark-color-2 d-flex align-items-center">
-                                            <img src="icons/gulp.svg" alt="" width="60px" height="60px">
-                                            <h3 class="mx-3 white-color">Gulp</h3>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-3 col-md-4 my-3" data-aos="fade-right" data-aos-duration="700" data-aos-anchor-placement="top-bottom" data-tilt data-tilt-reverse="true">
-                                        <div class="dark-color-2 d-flex align-items-center">
-                                            <img src="icons/pug.png" alt="" width="80px" height="60px">
-                                            <h3 class="mx-3 white-color">Pugjs</h3>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-3 col-md-4 my-3" data-aos="fade-right" data-aos-duration="700" data-aos-anchor-placement="top-bottom" data-tilt data-tilt-reverse="true">
-                                        <div class="dark-color-2 d-flex align-items-center">
-                                            <img src="icons/sass.svg" alt="" width="60px" height="60px">
-                                            <h3 class="mx-3 white-color">Sass</h3>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-3 col-md-4 my-3" data-aos="fade-right" data-aos-duration="700" data-aos-anchor-placement="top-bottom" data-tilt data-tilt-reverse="true">
-                                        <div class="dark-color-2 d-flex align-items-center">
-                                            <img src="icons/js.svg" alt="" width="60px" height="60px">
-                                            <h3 class="mx-3 white-color">JS</h3>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-3 col-md-4 my-3" data-aos="fade-right" data-aos-duration="700" data-aos-anchor-placement="top-bottom" data-tilt data-tilt-reverse="true">
-                                        <div class="dark-color-2 d-flex align-items-center">
-                                            <img src="icons/github.svg" alt="" width="60px" height="60px">
-                                            <h3 class="mx-3 white-color">Git</h3>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-3 col-md-4 my-3" data-aos="fade-right" data-aos-duration="700" data-aos-anchor-placement="top-bottom" data-tilt data-tilt-reverse="true">
-                                        <div class="dark-color-2 d-flex align-items-center">
-                                            <img src="icons/vue.png" alt="" width="60px" height="60px">
-                                            <h3 class="mx-3 white-color">VUE JS</h3>
+                                    <div class="wrapper-text">
+                                        <span>Rising Talent Freelancer</span>
+                                        <div class="px_wrapper text-start">
+                                            <ul class="list-gap">
+                                                <li></li>
+                                                <li class="sc-mt-15">
+                                                    <a href="https://www.upwork.com/freelancers/~01e97bfa4daed5abbf" target="_blank"><img src="assets/images/icon/upwork.png" alt="Image" /></a>
+                                                </li>
+                                            </ul>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="works-section p-sections" data-section="works">
-                            <div class="container">
-                                <h1 class="white-color left-border fw-bold">Works</h1>
-                                <div class="works-section-content mt-4">
-                                    <div class="position-relative overflow-hidden rounded" data-aos="fade-up" data data-tilt data-tilt-reverse="true">
-                                        <img src="images/pisti.png" alt="" width="100%" class="rounded">
-                                        <div class="hidden position-absolute top-0 w-100 rounded">
-                                            <div class="text-center">
-                                                <h4>PISTI</h4>
-                                                <a href="https://pisti.ae" target="_blank"><button class="dark-light-button">Live Demo</button></a>
+                    </div>
+                    <div class="banner-social">
+                        <ul class="social-media list-gap">
+                            <li>
+                                <a href="https://www.facebook.com/anaseem22/" target="_blank"> <i class="ri-facebook-fill"></i></a>
+                            </li>
+                            <li>
+                                <a href="https://www.linkedin.com/in/anaseem60/" target="_blank"> <i class="ri-linkedin-fill"></i></a>
+                            </li>
+                            <li>
+                                <a href="https://github.com/anaseem80" target="_blank"> <i class="ri-github-fill"></i></a>
+                            </li>
+                            <li>
+                                <a href="tel:+201159614802"> <i class="ri-phone-line"></i></a>
+                            </li>
+                        </ul>
+                        <div class="social-text">
+                            <span>Follow Me</span>
+                        </div>
+                    </div>
+                    <div class="banner-scroll">
+                        <a href="#scroll-banner"> <img src="assets/images/icon/scroll.svg" alt="Icon" /></a>
+                    </div>
+                </div>
+
+                <!--========== Banner Section End ==============-->
+                <div id="scroll-banner" class="sc-roll-bg">
+                    <!--========== Roll Section Start ==============-->
+                    <div class="sc-roll-section sc-pt-55 sc-pb-55">
+                        <div class="slide-roll">
+                            <div class="roll-box">
+                                <div class="roll-item">
+                                    <div class="roll-title d-flex align-items-center">
+                                        <h4 class="title">HTML5</h4>
+                                        <img class="portal-icon" src="assets/images/icon/portal-1.svg" alt="Icon" />
+                                    </div>
+                                </div>
+                                <div class="roll-item">
+                                    <div class="roll-title d-flex align-items-center">
+                                        <h4 class="title">CSS3</h4>
+                                        <img class="portal-icon" src="assets/images/icon/portal-1.svg" alt="Icon" />
+                                    </div>
+                                </div>
+                                <div class="roll-item">
+                                    <div class="roll-title d-flex align-items-center">
+                                        <h4 class="title">JS</h4>
+                                        <img class="portal-icon" src="assets/images/icon/portal-1.svg" alt="Icon" />
+                                    </div>
+                                </div>
+                                <div class="roll-item">
+                                    <div class="roll-title d-flex align-items-center">
+                                        <h4 class="title">Vue JS</h4>
+                                        <img class="portal-icon" src="assets/images/icon/portal-1.svg" alt="Icon" />
+                                    </div>
+                                </div>
+                                <div class="roll-item">
+                                    <div class="roll-title d-flex align-items-center">
+                                        <h4 class="title">Bootstrap</h4>
+                                        <img class="portal-icon" src="assets/images/icon/portal-1.svg" alt="Icon" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="roll-box">
+                                <div class="roll-item">
+                                    <div class="roll-title d-flex align-items-center">
+                                        <h4 class="title">JQuery</h4>
+                                        <img class="portal-icon" src="assets/images/icon/portal-1.svg" alt="Icon" />
+                                    </div>
+                                </div>
+                                <div class="roll-item">
+                                    <div class="roll-title d-flex align-items-center">
+                                        <h4 class="title">Figma</h4>
+                                        <img class="portal-icon" src="assets/images/icon/portal-1.svg" alt="Icon" />
+                                    </div>
+                                </div>
+                                <div class="roll-item">
+                                    <div class="roll-title d-flex align-items-center">
+                                        <h4 class="title">ES6</h4>
+                                        <img class="portal-icon" src="assets/images/icon/portal-1.svg" alt="Icon" />
+                                    </div>
+                                </div>
+                                <div class="roll-item">
+                                    <div class="roll-title d-flex align-items-center">
+                                        <h4 class="title">Sass</h4>
+                                        <img class="portal-icon" src="assets/images/icon/portal-1.svg" alt="Icon" />
+                                    </div>
+                                </div>
+                                <div class="roll-item">
+                                    <div class="roll-title d-flex align-items-center">
+                                        <h4 class="title">Github</h4>
+                                        <img class="portal-icon" src="assets/images/icon/portal-1.svg" alt="Icon" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--========== Roll Section End ==============-->
+
+                    <!--========== Roll Section Start ==============-->
+                    <div class="sc-roll-section-three sc-pt-55 sc-pb-55">
+                        <div class="slide-roll">
+                            <div class="roll-box roll-box-revers">
+                                <div class="roll-item">
+                                    <div class="roll-title d-flex align-items-center">
+                                        <h4 class="title">HTML5</h4>
+                                        <img class="portal-icon" src="assets/images/icon/portal-1.svg" alt="Icon" />
+                                    </div>
+                                </div>
+                                <div class="roll-item">
+                                    <div class="roll-title d-flex align-items-center">
+                                        <h4 class="title">CSS3</h4>
+                                        <img class="portal-icon" src="assets/images/icon/portal-1.svg" alt="Icon" />
+                                    </div>
+                                </div>
+                                <div class="roll-item">
+                                    <div class="roll-title d-flex align-items-center">
+                                        <h4 class="title">JS</h4>
+                                        <img class="portal-icon" src="assets/images/icon/portal-1.svg" alt="Icon" />
+                                    </div>
+                                </div>
+                                <div class="roll-item">
+                                    <div class="roll-title d-flex align-items-center">
+                                        <h4 class="title">Vue JS</h4>
+                                        <img class="portal-icon" src="assets/images/icon/portal-1.svg" alt="Icon" />
+                                    </div>
+                                </div>
+                                <div class="roll-item">
+                                    <div class="roll-title d-flex align-items-center">
+                                        <h4 class="title">Bootstrap</h4>
+                                        <img class="portal-icon" src="assets/images/icon/portal-1.svg" alt="Icon" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="roll-box roll-box-revers">
+                                <div class="roll-item">
+                                    <div class="roll-title d-flex align-items-center">
+                                        <h4 class="title">JQuery</h4>
+                                        <img class="portal-icon" src="assets/images/icon/portal-2.svg" alt="Icon" />
+                                    </div>
+                                </div>
+                                <div class="roll-item">
+                                    <div class="roll-title d-flex align-items-center">
+                                        <h4 class="title">Figma</h4>
+                                        <img class="portal-icon" src="assets/images/icon/portal-2.svg" alt="Icon" />
+                                    </div>
+                                </div>
+                                <div class="roll-item">
+                                    <div class="roll-title d-flex align-items-center">
+                                        <h4 class="title">ES6</h4>
+                                        <img class="portal-icon" src="assets/images/icon/portal-2.svg" alt="Icon" />
+                                    </div>
+                                </div>
+                                <div class="roll-item">
+                                    <div class="roll-title d-flex align-items-center">
+                                        <h4 class="title">Sass</h4>
+                                        <img class="portal-icon" src="assets/images/icon/portal-2.svg" alt="Icon" />
+                                    </div>
+                                </div>
+                                <div class="roll-item">
+                                    <div class="roll-title d-flex align-items-center">
+                                        <h4 class="title">Github</h4>
+                                        <img class="portal-icon" src="assets/images/icon/portal-2.svg" alt="Icon" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--========== Roll Section End ==============-->
+                </div>
+                <!--========== About Section Start ==============-->
+                <div id="scroll-about" class="about-section dark-color sc-pt-115 sc-md-pt-75 sc-pb-120 sc-md-pb-80">
+                    <div class="container ab-container">
+                        <div class="row">
+                            <div class="col-lg-6 offset-lg-3 col-md-8 offset-md-2">
+                                <div class="sc-heading-area sec-animation text-center sc-mb-70 sc-md-mb-50">
+                                    <span class="sub-title"> About Me 👋</span>
+                                    <h2 class="title">
+                                        I’ve been
+                                        <span class="active-color"> Developing</span> Since 2020
+                                    </h2>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row ab-content-box darker-color">
+                            <div class="col-lg-6 fade_bottom_animation">
+                                <div class="ab-left-content sc-md-mb-60">
+                                    <div class="ab-text">
+                                        <div class="ab-mission sc-mb-30">My Mission</div>
+                                        <p class="desc sc-mb-25">
+                                            independent front-end developer with 4 years of experience in blending the art of design with the skill of programming to deliver an immersive and engaging user experience through efficient designing and building responsive websites with modern animation. Proficient with CSS and JS Frameworks.
+                                        </p>
+                                        <p class="desc sc-mb-25">
+                                            Beta test survival. Phosfluorescently engage worldwide methodologies
+                                            Web-enabled technology. Interactively coordinate proactive commerce via
+                                            process-centric "outside the box" thinking Completely.
+                                        </p>
+                                    </div>
+                                    <div class="ab-counter d-flex align-items-center sc-mb-30">
+                                        <div class="sc-counter-number d-flex align-items-center sc-mr-50">
+                                            <div class="sc-count sc-mr-20">
+                                                <div class="sc-count">
+                                                    +<span class="odometer" data-count="4">0</span>
+                                                </div>
+                                            </div>
+                                            <div class="sc-counter-text">
+                                                <span class="sc-title p-z-idex position-relative"
+                                                    >Years of <br />
+                                                    experience</span
+                                                >
+                                            </div>
+                                        </div>
+                                        <div class="sc-counter-number d-flex align-items-center sc-mr-50">
+                                            <div class="sc-count sc-mr-20">
+                                                <div class="sc-count">
+                                                    +<span class="odometer" data-count="15">0</span>
+                                                </div>
+                                            </div>
+                                            <div class="sc-counter-text">
+                                                <span class="sc-title p-z-idex position-relative"
+                                                    >Successful <br />
+                                                    projects</span
+                                                >
+                                            </div>
+                                        </div>
+                                        <div class="sc-counter-number d-flex align-items-center">
+                                            <div class="sc-count sc-mr-20">
+                                                <div class="sc-count">
+                                                    +<span class="odometer" data-count="20">0</span>
+                                                </div>
+                                            </div>
+                                            <div class="sc-counter-text">
+                                                <span class="sc-title p-z-idex position-relative"
+                                                    >Happy <br />
+                                                    Clients</span
+                                                >
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="position-relative overflow-hidden rounded" data-aos="fade-up" data data-tilt data-tilt-reverse="true">
-                                        <img src="images/4.png" alt="" width="100%" class="rounded">
-                                        <div class="hidden position-absolute top-0 w-100 rounded">
-                                            <div class="text-center">
-                                                <h4>Beinsport site</h4>
-                                                <a href="https://www.beinsportsgulf.com/" target="_blank"><button class="dark-light-button">Live Demo</button></a>
-                                            </div>
+                                    <!-- <div class="ab-auother">
+                                        <h6 class="title">Ahmed Naseem</h6>
+                                    </div> -->
+                                </div>
+                            </div>
+                            <div class="col-lg-6 fade_bottom_animation">
+                                <div class="ab-right-content">
+                                    <div class="ab-experience sc-mb-30">Experience & Skills</div>
+                                    <div class="ab-date-content row">
+                                        <div class="col-lg-9 date-header">
+                                            <h6 class="title mb-0">Neqat Company - Onsite</h6>
+                                            <p>Egypt - Giza</p>
+                                            <ul class="p-0 list-unstyled mt-1">
+                                                <li class="mb-2">1. Responsible for architecting and defining the Front-end framework to solve complex designs and interactions that reflect the creative and art direction.</li>
+                                                <li class="mb-2">2. Collaborated with the UX/UI design teams to improve the website, Dashboard, and convert it to real world.</li>
+                                                <li>3. Daily maintenance of code, debugging issues and solving problems.</li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-lg-3 ab-date text-end">
+                                            <span class="date"> 1/2021 - 9/2021</span>
                                         </div>
                                     </div>
-                                    <div class="position-relative overflow-hidden rounded"   data data-tilt data-tilt-reverse="true">
-                                        <img src="images/tt.png" alt="" width="100%" class="rounded">
-                                        <div class="hidden position-absolute top-0 w-100 rounded">
-                                            <div class="text-center">
-                                                <h4>Tonsetech</h4>
-                                                <a href="https://tonsetech.com/demo/ttweb" target="_blank"><button class="dark-light-button">Live Demo</button></a>
-                                            </div>
+                                    <div class="ab-date-content row">
+                                        <div class="col-lg-9 date-header">
+                                            <h6 class="title mb-0">Finboa Company - Remotly</h6>
+                                            <p>USA - Texas</p>
+                                            <ul class="p-0 list-unstyled mt-1">
+                                                <li class="mb-2">1. Integrate with back-end APIs.</li>
+                                                <li class="mb-2">2. Designed and implemented web applications.</li>
+                                                <li>3. Design and develop features for an industry-leading Workload Automation product using modern front-end technologies.</li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-lg-3 ab-date text-end">
+                                            <span class="date"> 9/2021 - 1/2022</span>
                                         </div>
                                     </div>
-                                    <div class="position-relative overflow-hidden rounded" data-aos="fade-up" data data-tilt data-tilt-reverse="true">
-                                        <img src="images/btech.png" alt="" width="100%" class="rounded">
-                                        <div class="hidden position-absolute top-0 w-100 rounded">
-                                            <div class="text-center">
-                                                <h4>BusinessTech</h4>
-                                                <a href="https://tonsetech.com/demo/btech/" target="_blank"><button class="dark-light-button">Live Demo</button></a>
-                                            </div>
+                                    <div class="ab-date-content row">
+                                        <div class="col-lg-9 date-header">
+                                            <h6 class="title mb-0">Tonsetech Company - Remotly</h6>
+                                            <p>Bahrain - Manama</p>
+                                            <ul class="p-0 list-unstyled mt-1">
+                                                <li class="mb-2">1. Implement UI/UX designs: Transform design mockups into functional web pages using HTML, CSS, and JavaScript.</li>
+                                                <li class="mb-2">2. Ensure cross-browser compatibility: Test and optimize websites to work seamlessly across different browsers.</li>
+                                                <li>3. Create responsive designs: Develop layouts that adapt to various screen sizes and devices.</li>
+                                                <li>4. Collaborate with team members: Work closely with UI/UX designers, backend developers.</li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-lg-3 ab-date text-end">
+                                            <span class="date"> 10/2022 - Present</span>
                                         </div>
                                     </div>
-                                    <div class="position-relative overflow-hidden rounded" data-aos="fade-up" data data-tilt data-tilt-reverse="true">
-                                        <img src="images/tft.png" alt="" width="100%" class="rounded">
-                                        <div class="hidden position-absolute top-0 w-100 rounded">
-                                            <div class="text-center">
-                                                <h4>TFT VIP TRADE</h4>
-                                                <a href="https://tftviptrade.com" target="_blank"><button class="dark-light-button">Live Demo</button></a>
-                                            </div>
+   
+                                    <div class="ab-social-list sc-mt-50">
+                                        <h5 class="title sc-mb-25">My Skill</h5>
+                                        <div class="list">
+                                            <ul class="list-gap">
+                                                <li>
+                                                    <span class="px-border">
+                                                        <img src="assets/icons/html5.svg" alt="Icon" width="35"
+                                                    /></span>
+                                                    <span class="d-block"> HTML5</span>
+                                                </li>
+                                                <li>
+                                                    <span class="px-border">
+                                                        <img src="assets/icons/css.svg" alt="Icon" width="35"
+                                                    /></span>
+                                                    <span class="d-block"> CSS3</span>
+                                                </li>
+                                                <li>
+                                                    <span class="px-border">
+                                                        <img src="assets/icons/js.svg" alt="Icon" width="35"
+                                                    /></span>
+                                                    <span class="d-block"> JS</span>
+                                                </li>
+                                                <li>
+                                                    <span class="px-border">
+                                                        <img src="assets/icons/vue.png" alt="Icon" width="35"
+                                                    /></span>
+                                                    <span class="d-block"> Vue JS</span>
+                                                </li>
+                                                <li>
+                                                    <span class="px-border">
+                                                        <img src="assets/icons/sass.svg" alt="Icon" width="35"
+                                                    /></span>
+                                                    <span class="d-block"> Sass</span>
+                                                </li>
+                                                <li>
+                                                    <span class="px-border">
+                                                        <img src="assets/icons/jquery.svg" alt="Icon" width="35"
+                                                    /></span>
+                                                    <span class="d-block"> JQuery</span>
+                                                </li>
+                                                <li>
+                                                    <span class="px-border">
+                                                        <img src="assets/icons/bootstrap.svg" alt="Icon" width="35"
+                                                    /></span>
+                                                    <span class="d-block"> Bootstrap</span>
+                                                </li>
+                                                <li>
+                                                    <span class="px-border">
+                                                        <img src="assets/icons/github.svg" alt="Icon" width="35"
+                                                    /></span>
+                                                    <span class="d-block"> Github</span>
+                                                </li>
+                                                <li>
+                                                    <span class="px-border">
+                                                        <img src="assets/icons/gulp.svg" alt="Icon" width="35"
+                                                    /></span>
+                                                    <span class="d-block"> Gulp</span>
+                                                </li>
+                                                <li>
+                                                    <span class="px-border">
+                                                        <img src="assets/icons/dart.svg" alt="Icon" width="35"
+                                                    /></span>
+                                                    <span class="d-block"> Dart</span>
+                                                </li>
+                                                <li>
+                                                    <span class="px-border">
+                                                        <img src="assets/icons/flutter.svg" alt="Icon" width="35"
+                                                    /></span>
+                                                    <span class="d-block"> Flutter</span>
+                                                </li>
+                                                <li>
+                                                    <span class="px-border">
+                                                        <img src="assets/icons/figma.svg" alt="Icon" width="35"
+                                                    /></span>
+                                                    <span class="d-block"> Figma</span>
+                                                </li>
+                                            </ul>
                                         </div>
                                     </div>
-                                    <div class="position-relative overflow-hidden rounded" data-aos="fade-up" data data-tilt data-tilt-reverse="true">
-                                        <img src="images/Oudz.png" alt="" width="100%" class="rounded">
-                                        <div class="hidden position-absolute top-0 w-100 rounded">
-                                            <div class="text-center">
-                                                <h4>Perfume site</h4>
-                                                <a href="https://oudz.ae" target="_blank"><button class="dark-light-button">Live Demo</button></a>
-                                            </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--========== About Section End ==============-->
+
+
+
+                <!--========== Portfolio Section Start ==============-->
+                <div
+                    id="scroll-portfolio"
+                    class="sc-portfolio-section sc-pt-120 sc-pb-120 sc-md-pt-80 sc-md-pb-50"
+                >
+                    <div class="container pf-container">
+                        <div class="row align-items-center">
+                            <div class="col-lg-6">
+                                <div class="sc-heading-area sec-animation sc-mb-70 sc-md-mb-30">
+                                    <span class="sub-title"> Portfolio 👏 </span>
+                                    <h2 class="title">
+                                        These Are My
+                                        <span class="active-color"> Portfolio</span>
+                                    </h2>
+                                </div>
+                            </div>
+                            <!-- <div class="col-lg-6">
+                                <div class="portfolio-button p-z-idex text-end sc-md-mb-50">
+                                    <a class="sc-primary-btn" href="project-details.html">
+                                        See All Project<i class="ri-arrow-right-line"></i
+                                    ></a>
+                                </div>
+                            </div> -->
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-6 col-md-6">
+                                <div
+                                    class="portfolio-item sc-md-mb-30"
+                                    data-sal="slide-up"
+                                    data-sal-duration="500"
+                                    data-sal-delay="100"
+                                >
+                                    <a class="" href="https://groupsolutions.app/" target="_blank">
+                                        <img src="assets/images/project/groupsolutions.png" alt="Image"
+                                    /></a>
+                                    <div class="portfolio-content d-flex align-items-center justify-content-between">
+                                        <div class="portfolio-header">
+                                            <span class="sub-title"> Freelancing</span>
+                                            <h4><a class=" title" href="https://groupsolutions.app/" target="_blank"> Group Solutions</a></h4>
+                                        </div>
+                                        <div class="portfolio-arrow">
+                                            <i class="ri-arrow-right-line"></i>
                                         </div>
                                     </div>
-                                    <div class="position-relative overflow-hidden rounded" data-aos="fade-up" data data-tilt data-tilt-reverse="true">
-                                        <img src="images/By7amda.png" alt="" width="100%" class="rounded">
-                                        <div class="hidden position-absolute top-0 w-100 rounded">
-                                            <div class="text-center">
-                                                <h4>Clothes site</h4>
-                                                <a href="https://by7amda.com/" target="_blank"><button class="dark-light-button">Live Demo</button></a>
-                                            </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-6">
+                                <div
+                                    class="portfolio-item sc-pt-100 sc-md-pt-0 sc-md-mb-30"
+                                    data-sal="slide-up"
+                                    data-sal-duration="500"
+                                    data-sal-delay="200"
+                                >
+                                    <a class="" href="https://tonsetech.com/" target="_blank">
+                                        <img src="assets/images/project/tonsetech.PNG" alt="Image" />
+                                    </a>
+                                    <div class="portfolio-content d-flex align-items-center justify-content-between">
+                                        <div class="portfolio-header">
+                                            <span class="sub-title"> Introductory </span>
+                                            <h4><a class=" title" href="https://tonsetech.com/" target="_blank"> Tonsetech</a></h4>
+                                        </div>
+                                        <div class="portfolio-arrow">
+                                            <i class="ri-arrow-right-line"></i>
                                         </div>
                                     </div>
-                                    <div class="position-relative overflow-hidden rounded" data-aos="fade-up" data data-tilt data-tilt-reverse="true">
-                                        <img src="images/limo.png" alt="" width="100%" class="rounded">
-                                        <div class="hidden position-absolute top-0 w-100 rounded">
-                                            <div class="text-center">
-                                                <h4>Cake site</h4>
-                                                <a href="https://limogesd.com/" target="_blank"><button class="dark-light-button">Live Demo</button></a>
-                                            </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-6">
+                                <div
+                                    class="portfolio-item sc-md-mb-30"
+                                    data-sal="slide-up"
+                                    data-sal-duration="500"
+                                    data-sal-delay="300"
+                                >
+                                    <a class="" href="https://jupiter-eg.com/" target="_blank">
+                                        <img src="assets/images/project/jupiter.PNG" alt="Image" />
+                                    </a>
+                                    <div class="portfolio-content d-flex align-items-center justify-content-between">
+                                        <div class="portfolio-header">
+                                            <span class="sub-title"> Ecommerce</span>
+                                            <h4><a class=" title" href="https://jupiter-eg.com/" target="_blank"> Jupiter EG</a></h4>
+                                        </div>
+                                        <div class="portfolio-arrow">
+                                            <i class="ri-arrow-right-line"></i>
                                         </div>
                                     </div>
-                                    <div class="position-relative overflow-hidden rounded" data-aos="fade-up" data data-tilt data-tilt-reverse="true">
-                                        <img src="images/arab.webp" style="transform: translateY(-70px);" alt="" width="100%" class="rounded">
-                                        <div class="hidden position-absolute top-0 w-100 rounded">
-                                            <div class="text-center">
-                                                <h4>Arab Medicine App</h4>
-                                                <a href="https://play.google.com/store/apps/details?id=com.app.arabmedicine" target="_blank"><button class="dark-light-button">Live Demo</button></a>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-6">
+                                <div
+                                    class="portfolio-item sc-pt-100 sc-md-pt-0 sc-md-mb-30"
+                                    data-sal="slide-up"
+                                    data-sal-duration="500"
+                                    data-sal-delay="100"
+                                >
+                                    <a class="" href="https://businesstechme.com" target="_blank">
+                                        <img src="assets/images/project/businesstech.PNG" alt="Image" />
+                                    </a>
+                                    <div class="portfolio-content d-flex align-items-center justify-content-between">
+                                        <div class="portfolio-header">
+                                            <span class="sub-title"> Introductory</span>
+                                            <h4><a class=" title" href="https://businesstechme.com" target="_blank"> BusinessTech</a></h4>
+                                        </div>
+                                        <div class="portfolio-arrow">
+                                            <i class="ri-arrow-right-line"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-6">
+                                <div
+                                    class="portfolio-item sc-md-mb-30"
+                                    data-sal="slide-up"
+                                    data-sal-duration="500"
+                                    data-sal-delay="300"
+                                >
+                                    <a class="" href="https://oudz.ae/" target="_blank">
+                                        <img src="assets/images/project/oudz.PNG" alt="Image" />
+                                    </a>
+                                    <div class="portfolio-content d-flex align-items-center justify-content-between">
+                                        <div class="portfolio-header">
+                                            <span class="sub-title"> Ecommerce</span>
+                                            <h4><a class=" title" href="https://oudz.ae/" target="_blank"> Oudz AE</a></h4>
+                                        </div>
+                                        <div class="portfolio-arrow">
+                                            <i class="ri-arrow-right-line"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-6">
+                                <div
+                                    class="portfolio-item sc-pt-100 sc-md-pt-0 sc-md-mb-30"
+                                    data-sal="slide-up"
+                                    data-sal-duration="500"
+                                    data-sal-delay="100"
+                                >
+                                    <a class="" href="https://elegantae.net/" target="_blank">
+                                        <img src="assets/images/project/elegant.PNG" alt="Image" />
+                                    </a>
+                                    <div class="portfolio-content d-flex align-items-center justify-content-between">
+                                        <div class="portfolio-header">
+                                            <span class="sub-title"> Ecommerce</span>
+                                            <h4><a class=" title" href="https://elegantae.net/" target="_blank"> Elegant AE</a></h4>
+                                        </div>
+                                        <div class="portfolio-arrow">
+                                            <i class="ri-arrow-right-line"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-6">
+                                <div
+                                    class="portfolio-item sc-md-mb-30"
+                                    data-sal="slide-up"
+                                    data-sal-duration="500"
+                                    data-sal-delay="300"
+                                >
+                                    <a class="" href="https://www.beinsportsgulf.com/" target="_blank">
+                                        <img src="assets/images/project/bein.PNG" alt="Image" />
+                                    </a>
+                                    <div class="portfolio-content d-flex align-items-center justify-content-between">
+                                        <div class="portfolio-header">
+                                            <span class="sub-title"> Ecommerce</span>
+                                            <h4><a class=" title" href="https://www.beinsportsgulf.com/" target="_blank"> Beinsport</a></h4>
+                                        </div>
+                                        <div class="portfolio-arrow">
+                                            <i class="ri-arrow-right-line"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-6">
+                                <div
+                                    class="portfolio-item sc-pt-100 sc-md-pt-0 sc-md-mb-30"
+                                    data-sal="slide-up"
+                                    data-sal-duration="500"
+                                    data-sal-delay="100"
+                                >
+                                    <a class="" href="https://signalmaster.uk/landing" target="_blank">
+                                        <img src="assets/images/project/signalmaster.PNG" alt="Image" />
+                                    </a>
+                                    <div class="portfolio-content d-flex align-items-center justify-content-between">
+                                        <div class="portfolio-header">
+                                            <span class="sub-title"> Forex</span>
+                                            <h4><a class=" title" href="https://signalmaster.uk/landing" target="_blank"> Signal Master</a></h4>
+                                        </div>
+                                        <div class="portfolio-arrow">
+                                            <i class="ri-arrow-right-line"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-6">
+                                <div
+                                    class="portfolio-item sc-md-mb-30"
+                                    data-sal="slide-up"
+                                    data-sal-duration="500"
+                                    data-sal-delay="100"
+                                >
+                                    <a class="" href="https://limogesd.com/" target="_blank">
+                                        <img src="assets/images/project/limogesd.PNG" alt="Image" />
+                                    </a>
+                                    <div class="portfolio-content d-flex align-items-center justify-content-between">
+                                        <div class="portfolio-header">
+                                            <span class="sub-title"> Ecommerce</span>
+                                            <h4><a class=" title" href="https://limogesd.com/" target="_blank"> Limogesd</a></h4>
+                                        </div>
+                                        <div class="portfolio-arrow">
+                                            <i class="ri-arrow-right-line"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-6">
+                                <div
+                                    class="portfolio-item sc-pt-100 sc-md-pt-0 sc-md-mb-30"
+                                    data-sal="slide-up"
+                                    data-sal-duration="500"
+                                    data-sal-delay="100"
+                                >
+                                    <a class="" href="https://limogesd.com/" target="_blank">
+                                        <img src="assets/images/project/arabmedicine.png" alt="Image" />
+                                    </a>
+                                    <div class="portfolio-content d-flex align-items-center justify-content-between">
+                                        <div class="portfolio-header">
+                                            <span class="sub-title"> Ecommerce website & Mobile Application</span>
+                                            <h4><a class=" title" href="https://limogesd.com/" target="_blank"> Arab Medicine</a></h4>
+                                            <a href="https://arabmedicine.online/" target="_blank" class="text-white">- Site</a><br>
+                                            <a href="https://play.google.com/store/apps/details?id=com.app.arabmedicine" target="_blank" class="text-white">- Application</a>
+                                        </div>
+                                        <div class="portfolio-arrow">
+                                            <i class="ri-arrow-right-line"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- portfolio-madal Start -->
+                <div id="portfolio-wrapper" class="sc-portfolio-content-area zoom-anim-dialog mfp-hide">
+                    <div class="portfolio-slider-area sc-mb-40">
+                        <div class="swiper sc-portfolio-slider">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="sc-project-image">
+                                        <img
+                                            src="assets/images/project/portfolio_bg.jpg"
+                                            alt="Project"
+                                        />
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="sc-project-image">
+                                        <img
+                                            src="assets/images/project/portfolio_bg1.jpg"
+                                            alt="Project"
+                                        />
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="sc-project-image">
+                                        <img
+                                            src="assets/images/project/portfolio_bg2.jpg"
+                                            alt="Project"
+                                        />
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="sc-project-image">
+                                        <img
+                                            src="assets/images/project/portfolio_bg3.jpg"
+                                            alt="Project"
+                                        />
+                                    </div>
+                                </div>
+                            </div>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                    </div>  
+                    </div>
+                    <div class="portfolio-inner-content sc-mb-35 pl-0">
+                        <div class="portfolio-text">
+                            <h4 class="cate-title white-color">
+                                Design Exploration
+                            </h4>
+                            <p class="des sc-mb-0">
+                                They are was greater open above sheltr lets itself under appear
+                                sixth open gathering made upon can't own above midst gathering
+                                gathered he one us saying can't divide.
+                            </p>
+                        </div>
+                        <div
+                            class="sc-inner-list d-flex align-items-center justify-content-between sc-mb-30"
+                        >
+                            <ul class="list-gap">
+                                <li>
+                                    <span> Client: </span>
+                                    James Smith
+                                </li>
+                                <li>
+                                    <span>Services: </span>
+                                    Web Development
+                                </li>
+                            </ul>
+                            <ul class="list-gap">
+                                <li>
+                                    <span> Date:</span>
+                                    35 Feb 2023
+                                </li>
+                                <li>
+                                    <span>Budget: </span>
+                                    $220000+
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="portfolio-button">
+                            <a class="sc-primary-btn" href="portfolio-details.html">
+                                View Project<i class="ri-arrow-right-line"></i
+                            ></a>
+                        </div>
+                    </div>
+                    <div class="sc-portfolio-text">
+                        <h3 class="sc-title">Project Description</h3>
+                        <p class="des sc-mb-0">
+                            Multiply itself from aboves divide multiply wait gathering. Is void our
+                            cattle divided lesser do deep abundantly beast fly isn't land after earth he
+                            void night. They are was greater open above sheltr lets itself under appear
+                            sixth open gathering made upon can't own above midst gathering gathered he
+                            one us saying can't divide was. Multiply first from grass, so very were
+                            itself also light brought is under together gathering created that them
+                            without rule.
+                        </p>
+                    </div>
+                    <div class="sc-working-content">
+                        <div class="sc-working-content-box sc-mb-40">
+                            <div class="row">
+                                <div class="col-lg-4 col-md-6">
+                                    <div class="sc-content-box">
+                                        <h5 class="title">Research Project</h5>
+                                        <p class="des">
+                                            Multiply first from grass, so very were also light
+                                            brought is under together.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-6">
+                                    <div class="sc-content-box">
+                                        <h5 class="title">Research Strategy</h5>
+                                        <p class="des">
+                                            Multiply first from grass, so very were also light
+                                            brought is under together.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-6">
+                                    <div class="sc-content-box">
+                                        <h5 class="title">Satisfied Works</h5>
+                                        <p class="des">
+                                            Multiply first from grass, so very were also light
+                                            brought is under together.
+                                        </p>
+                                    </div>
+                                </div>
+                                <p class="des sc-mb-55">
+                                    Overpricing of these toxic stocks can be attributed to either an
+                                    irrational enthusiasm surrounding them or some serious fundamental
+                                    drawbacks. If you own such bubble stocks for an inordinate period of
+                                    time, you are bound to see a massive erosion of wealth.
+                                </p>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-6 col-md-6">
+                                    <div class="sc-details-image sc-image sc-md-mb-30">
+                                        <img src="assets/images/project/project-slider2.jpg" alt="Project" />
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-md-6">
+                                    <div class="sc-details-image">
+                                        <img src="assets/images/project/project-slider3.jpg" alt="Project" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sc-related-content">
+                        <h3 class="sc-title">Innovate Grow and Succeed</h3>
+                        <p class="des sc-mb-30">
+                            They are was greater open above sheltr lets itself under appear sixth open
+                            gathering made upon can't own above midst gathering gathered he one us
+                            saying can't divide was. Male meat beast you're yielding made was you tree
+                            can't there you will dry. Abundantly divided can't his. Upon its subdue
+                            female place fish good.
+                        </p>
+                        <p class="des sc-mb-30">
+                            Abundantly divided can't his. Upon its subdue female place fish good. Given
+                            under spirit beginning very into likeness were their hath after Their
+                            likeness without creeping midst Dominion bearing firmament using to two
+                            saying creeping together itself sea open from light Morning. Land after
+                            earth he void night. Male meat beast you're yielding made was you font cell
+                            to tree can't there you will dry.
+                        </p>
+                        <p class="des sc-mb-0">
+                            Dominion bearing firmament using to two saying creeping together itself sea
+                            open from light Morning. Land after earth he void night. Male meat beast
+                            you're yielding made was you font cell to tree can't there you will dry.
+                            Abundantly divided can't his. Upon its subdue female place fish good. Given
+                            under spirit beginning very into likeness were their hath after Their
+                            likeness without creeping midst.
+                        </p>
+                    </div>
+                </div>
+                <!-- portfolio-madal End -->
+
+                <!-- portfolio-madal Start -->
+                <div id="portfolio-wrapper2" class="sc-portfolio-content-area zoom-anim-dialog mfp-hide">
+                    <div class="sc-project-image sc-mb-40">
+                        <img
+                            src="assets/images/project/portfolio_bg1.jpg"
+                            alt="Project"
+                        />
+                    </div>   
+                    <div class="portfolio-inner-content sc-mb-35 pl-0">
+                        <div class="portfolio-text">
+                            <h4 class="cate-title white-color">
+                                Design Exploration
+                            </h4>
+                            <p class="des sc-mb-0">
+                                They are was greater open above sheltr lets itself under appear
+                                sixth open gathering made upon can't own above midst gathering
+                                gathered he one us saying can't divide.
+                            </p>
+                        </div>
+                        <div
+                            class="sc-inner-list d-flex align-items-center justify-content-between sc-mb-30"
+                        >
+                            <ul class="list-gap">
+                                <li>
+                                    <span> Client: </span>
+                                    James Smith
+                                </li>
+                                <li>
+                                    <span>Services: </span>
+                                    Web Development
+                                </li>
+                            </ul>
+                            <ul class="list-gap">
+                                <li>
+                                    <span> Date:</span>
+                                    35 Feb 2023
+                                </li>
+                                <li>
+                                    <span>Budget: </span>
+                                    $220000+
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="portfolio-button">
+                            <a class="sc-primary-btn" href="portfolio-details.html">
+                                View Project<i class="ri-arrow-right-line"></i
+                            ></a>
+                        </div>
+                    </div>
+                    <div class="sc-portfolio-text">
+                        <h3 class="sc-title">Project Description</h3>
+                        <p class="des sc-mb-0">
+                            Multiply itself from aboves divide multiply wait gathering. Is void our
+                            cattle divided lesser do deep abundantly beast fly isn't land after earth he
+                            void night. They are was greater open above sheltr lets itself under appear
+                            sixth open gathering made upon can't own above midst gathering gathered he
+                            one us saying can't divide was. Multiply first from grass, so very were
+                            itself also light brought is under together gathering created that them
+                            without rule.
+                        </p>
+                    </div>
+                    <div class="sc-working-content">
+                        <div class="sc-working-content-box sc-mb-40">
+                            <div class="row">
+                                <div class="col-lg-4 col-md-6">
+                                    <div class="sc-content-box">
+                                        <h5 class="title">Research Project</h5>
+                                        <p class="des">
+                                            Multiply first from grass, so very were itself also light
+                                            brought is under together that them without rule.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-6">
+                                    <div class="sc-content-box">
+                                        <h5 class="title">Research Strategy</h5>
+                                        <p class="des">
+                                            Multiply first from grass, so very were itself also light
+                                            brought is under together that them without rule.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-6">
+                                    <div class="sc-content-box">
+                                        <h5 class="title">Satisfied Works</h5>
+                                        <p class="des">
+                                            Multiply first from grass, so very were itself also light
+                                            brought is under together that them without rule.
+                                        </p>
+                                    </div>
+                                </div>
+                                <p class="des sc-mb-55">
+                                    Overpricing of these toxic stocks can be attributed to either an
+                                    irrational enthusiasm surrounding them or some serious fundamental
+                                    drawbacks. If you own such bubble stocks for an inordinate period of
+                                    time, you are bound to see a massive erosion of wealth.
+                                </p>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-6 col-md-6">
+                                    <div class="sc-details-image sc-image sc-md-mb-30">
+                                        <img src="assets/images/project/project-slider2.jpg" alt="Project" />
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-md-6">
+                                    <div class="sc-details-image">
+                                        <img src="assets/images/project/project-slider3.jpg" alt="Project" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sc-related-content">
+                        <h3 class="sc-title">Innovate Grow and Succeed</h3>
+                        <p class="des sc-mb-30">
+                            They are was greater open above sheltr lets itself under appear sixth open
+                            gathering made upon can't own above midst gathering gathered he one us
+                            saying can't divide was. Male meat beast you're yielding made was you tree
+                            can't there you will dry. Abundantly divided can't his. Upon its subdue
+                            female place fish good.
+                        </p>
+                        <p class="des sc-mb-30">
+                            Abundantly divided can't his. Upon its subdue female place fish good. Given
+                            under spirit beginning very into likeness were their hath after Their
+                            likeness without creeping midst Dominion bearing firmament using to two
+                            saying creeping together itself sea open from light Morning. Land after
+                            earth he void night. Male meat beast you're yielding made was you font cell
+                            to tree can't there you will dry.
+                        </p>
+                        <p class="des sc-mb-0">
+                            Dominion bearing firmament using to two saying creeping together itself sea
+                            open from light Morning. Land after earth he void night. Male meat beast
+                            you're yielding made was you font cell to tree can't there you will dry.
+                            Abundantly divided can't his. Upon its subdue female place fish good. Given
+                            under spirit beginning very into likeness were their hath after Their
+                            likeness without creeping midst.
+                        </p>
+                    </div>
+                </div>
+                <!-- portfolio-madal End -->
+
+                <!-- portfolio-madal Start -->
+                <div id="portfolio-wrapper3" class="sc-portfolio-content-area zoom-anim-dialog mfp-hide">
+                    <div class="row align-items-center">
+                        <div class="col-lg-6">
+                            <div class="portfolio-image sc-mb-40">
+                                <img
+                                    src="assets/images/project/portfolio_3.jpg"
+                                    alt="Project"
+                                />
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="portfolio-inner-content sc-mb-35 pl-0">
+                                <div class="portfolio-text">
+                                    <h4 class="cate-title white-color">
+                                        Design Exploration
+                                    </h4>
+                                    <p class="des sc-mb-0">
+                                        They are was greater open above sheltr lets itself under appear
+                                        sixth open gathering made upon can't own above midst gathering
+                                        gathered he one us saying can't divide.
+                                    </p>
+                                </div>
+                                <div
+                                    class="sc-inner-list d-flex align-items-center justify-content-between sc-mb-30"
+                                >
+                                    <ul class="list-gap">
+                                        <li>
+                                            <span> Client: </span>
+                                            James Smith
+                                        </li>
+                                        <li>
+                                            <span>Services: </span>
+                                            Web Development
+                                        </li>
+                                    </ul>
+                                    <ul class="list-gap">
+                                        <li>
+                                            <span> Date:</span>
+                                            35 Feb 2023
+                                        </li>
+                                        <li>
+                                            <span>Budget: </span>
+                                            $220000+
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="portfolio-button">
+                                    <a class="sc-primary-btn" href="portfolio-details.html">
+                                        View Project<i class="ri-arrow-right-line"></i
+                                    ></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sc-portfolio-text">
+                        <h3 class="sc-title">Project Description</h3>
+                        <p class="des sc-mb-0">
+                            Multiply itself from aboves divide multiply wait gathering. Is void our
+                            cattle divided lesser do deep abundantly beast fly isn't land after earth he
+                            void night. They are was greater open above sheltr lets itself under appear
+                            sixth open gathering made upon can't own above midst gathering gathered he
+                            one us saying can't divide was. Multiply first from grass, so very were
+                            itself also light brought is under together gathering created that them
+                            without rule.
+                        </p>
+                    </div>
+                    <div class="sc-working-content">
+                        <div class="sc-working-content-box sc-mb-40">
+                            <div class="row">
+                                <div class="col-lg-4 col-md-6">
+                                    <div class="sc-content-box">
+                                        <h5 class="title">Research Project</h5>
+                                        <p class="des">
+                                            Multiply first from grass, so very were itself also light
+                                            brought is under together that them without rule.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-6">
+                                    <div class="sc-content-box">
+                                        <h5 class="title">Research Strategy</h5>
+                                        <p class="des">
+                                            Multiply first from grass, so very were itself also light
+                                            brought is under together that them without rule.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-6">
+                                    <div class="sc-content-box">
+                                        <h5 class="title">Satisfied Works</h5>
+                                        <p class="des">
+                                            Multiply first from grass, so very were itself also light
+                                            brought is under together that them without rule.
+                                        </p>
+                                    </div>
+                                </div>
+                                <p class="des sc-mb-55">
+                                    Overpricing of these toxic stocks can be attributed to either an
+                                    irrational enthusiasm surrounding them or some serious fundamental
+                                    drawbacks. If you own such bubble stocks for an inordinate period of
+                                    time, you are bound to see a massive erosion of wealth.
+                                </p>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-6 col-md-6">
+                                    <div class="sc-details-image sc-image sc-md-mb-30">
+                                        <img src="assets/images/project/project-slider2.jpg" alt="Project" />
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-md-6">
+                                    <div class="sc-details-image">
+                                        <img src="assets/images/project/project-slider3.jpg" alt="Project" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sc-related-content">
+                        <h3 class="sc-title">Innovate Grow and Succeed</h3>
+                        <p class="des sc-mb-30">
+                            They are was greater open above sheltr lets itself under appear sixth open
+                            gathering made upon can't own above midst gathering gathered he one us
+                            saying can't divide was. Male meat beast you're yielding made was you tree
+                            can't there you will dry. Abundantly divided can't his. Upon its subdue
+                            female place fish good.
+                        </p>
+                        <p class="des sc-mb-30">
+                            Abundantly divided can't his. Upon its subdue female place fish good. Given
+                            under spirit beginning very into likeness were their hath after Their
+                            likeness without creeping midst Dominion bearing firmament using to two
+                            saying creeping together itself sea open from light Morning. Land after
+                            earth he void night. Male meat beast you're yielding made was you font cell
+                            to tree can't there you will dry.
+                        </p>
+                        <p class="des sc-mb-0">
+                            Dominion bearing firmament using to two saying creeping together itself sea
+                            open from light Morning. Land after earth he void night. Male meat beast
+                            you're yielding made was you font cell to tree can't there you will dry.
+                            Abundantly divided can't his. Upon its subdue female place fish good. Given
+                            under spirit beginning very into likeness were their hath after Their
+                            likeness without creeping midst.
+                        </p>
+                    </div>
+                </div>
+                <!-- portfolio-madal End -->
+
+                <!-- portfolio-madal Start -->
+                <div id="portfolio-wrapper4" class="sc-portfolio-content-area zoom-anim-dialog mfp-hide">
+                    <div class="row align-items-center sc-mb-35">
+                        <div class="col-lg-6">
+                            <div class="swiper sc-portfolio-slider">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <div class="sc-project-image">
+                                            <img
+                                                src="assets/images/project/portfolio_1.jpg"
+                                                alt="Project"
+                                            />
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="sc-project-image">
+                                            <img
+                                                src="assets/images/project/portfolio_2.jpg"
+                                                alt="Project"
+                                            />
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="sc-project-image">
+                                            <img
+                                                src="assets/images/project/portfolio_3.jpg"
+                                                alt="Project"
+                                            />
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="sc-project-image">
+                                            <img
+                                                src="assets/images/project/portfolio_4.jpg"
+                                                alt="Project"
+                                            />
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-button-next"></div>
+                                <div class="swiper-button-prev"></div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="portfolio-inner-content sc-md-mt-30">
+                                <div class="portfolio-text">
+                                    <h4 class="cate-title white-color">
+                                        Design Exploration
+                                    </h4>
+                                    <p class="des sc-mb-0">
+                                        They are was greater open above sheltr lets itself under appear
+                                        sixth open gathering made upon can't own above midst gathering
+                                        gathered he one us saying can't divide.
+                                    </p>
+                                </div>
+                                <div
+                                    class="sc-inner-list d-flex align-items-center justify-content-between sc-mb-30"
+                                >
+                                    <ul class="list-gap">
+                                        <li>
+                                            <span> Client: </span>
+                                            James Smith
+                                        </li>
+                                        <li>
+                                            <span>Services: </span>
+                                            Web Development
+                                        </li>
+                                    </ul>
+                                    <ul class="list-gap">
+                                        <li>
+                                            <span> Date:</span>
+                                            35 Feb 2023
+                                        </li>
+                                        <li>
+                                            <span>Budget: </span>
+                                            $220000+
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="portfolio-button">
+                                    <a class="sc-primary-btn" href="portfolio-details.html">
+                                        View Project<i class="ri-arrow-right-line"></i
+                                    ></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sc-portfolio-text">
+                        <h3 class="sc-title">Project Description</h3>
+                        <p class="des sc-mb-0">
+                            Multiply itself from aboves divide multiply wait gathering. Is void our
+                            cattle divided lesser do deep abundantly beast fly isn't land after earth he
+                            void night. They are was greater open above sheltr lets itself under appear
+                            sixth open gathering made upon can't own above midst gathering gathered he
+                            one us saying can't divide was. Multiply first from grass, so very were
+                            itself also light brought is under together gathering created that them
+                            without rule.
+                        </p>
+                    </div>
+                    <div class="sc-working-content">
+                        <div class="sc-working-content-box sc-mb-40">
+                            <div class="row">
+                                <div class="col-lg-4 col-md-6">
+                                    <div class="sc-content-box">
+                                        <h5 class="title">Research Project</h5>
+                                        <p class="des">
+                                            Multiply first from grass, so very were itself also light
+                                            brought is under together that them without rule.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-6">
+                                    <div class="sc-content-box">
+                                        <h5 class="title">Research Strategy</h5>
+                                        <p class="des">
+                                            Multiply first from grass, so very were itself also light
+                                            brought is under together that them without rule.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-6">
+                                    <div class="sc-content-box">
+                                        <h5 class="title">Satisfied Works</h5>
+                                        <p class="des">
+                                            Multiply first from grass, so very were itself also light
+                                            brought is under together that them without rule.
+                                        </p>
+                                    </div>
+                                </div>
+                                <p class="des sc-mb-55">
+                                    Overpricing of these toxic stocks can be attributed to either an
+                                    irrational enthusiasm surrounding them or some serious fundamental
+                                    drawbacks. If you own such bubble stocks for an inordinate period of
+                                    time, you are bound to see a massive erosion of wealth.
+                                </p>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-6 col-md-6">
+                                    <div class="sc-details-image sc-image sc-md-mb-30">
+                                        <img src="assets/images/project/project-slider2.jpg" alt="Project" />
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-md-6">
+                                    <div class="sc-details-image">
+                                        <img src="assets/images/project/project-slider3.jpg" alt="Project" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sc-related-content">
+                        <h3 class="sc-title">Innovate Grow and Succeed</h3>
+                        <p class="des sc-mb-30">
+                            They are was greater open above sheltr lets itself under appear sixth open
+                            gathering made upon can't own above midst gathering gathered he one us
+                            saying can't divide was. Male meat beast you're yielding made was you tree
+                            can't there you will dry. Abundantly divided can't his. Upon its subdue
+                            female place fish good.
+                        </p>
+                        <p class="des sc-mb-30">
+                            Abundantly divided can't his. Upon its subdue female place fish good. Given
+                            under spirit beginning very into likeness were their hath after Their
+                            likeness without creeping midst Dominion bearing firmament using to two
+                            saying creeping together itself sea open from light Morning. Land after
+                            earth he void night. Male meat beast you're yielding made was you font cell
+                            to tree can't there you will dry.
+                        </p>
+                        <p class="des sc-mb-0">
+                            Dominion bearing firmament using to two saying creeping together itself sea
+                            open from light Morning. Land after earth he void night. Male meat beast
+                            you're yielding made was you font cell to tree can't there you will dry.
+                            Abundantly divided can't his. Upon its subdue female place fish good. Given
+                            under spirit beginning very into likeness were their hath after Their
+                            likeness without creeping midst.
+                        </p>
+                    </div>
+                </div>
+                <!-- portfolio-madal End -->
+
+                <!--========== Portfolio Section End ==============-->
+
+
+
+                <!--========== Cta Section Start ==============-->
+                <div class="sc-cta-section">
+                    <div class="">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="cta-content-box">
+                                    <div class="container">
+                                        <div class="d-flex align-items-center justify-content-between flex-column text-center sc-pt-80 sc-pb-80 sc-md-pt-75 sc-md-pb-80">
+                                            <div class="cta-title">
+                                                <h3 class="title">
+                                                    I'm available for<br />
+                                                    freelance work!
+                                                </h3>
+                                            </div>
+                                            <div class="cta-button d-flex align-items-center mt-5">
+                                                <!-- <div class="primary-btn sc-mr-20">
+                                                    <a class="sc-primary-btn" href="#">
+                                                        Hire Me <i class="ri-arrow-right-line"></i
+                                                    ></a>
+                                                </div> -->
+                                                <div class="transparent-btn">
+                                                    <a class="sc-transparent-btn" href="#scroll-contact">
+                                                        <i class="ri-phone-fill"></i> Book a call
+                                                    </a>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="contact-section p-sections" id="contact" data-section="contact">
-                            <div class="container">
-                                <h1 class="white-color left-border fw-bold">Contact Me</h1>
-                                <div class="row">
-                                    <div class="col-lg-6 rounded my-3" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
-                                        <div class="d-flex flex-wrap contact-details flex-column rounded">
-                                            <div class="white-color d-flex fw-bold fs-3"><ion-icon name="call-outline" class="p-2 rounded-circle me-3"></ion-icon> PHONE</div>
-                                            <p class="white-color m-0 fw-bold ms-5">+20 1159614802</p>
+                    </div>
+                </div>
+                <!--========== Cta Section End ==============-->
+
+                <!--========== Project Section Start ==============-->
+                <div id="scroll-contact" class="sc-project-section sc-pt-120 sc-pb-120 sc-md-pt-75 sc-md-pb-80">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-7" data-sal="slide-left" data-sal-duration="800">
+                                <div class="project-left-content sc-md-mb-50">
+                                    <div class="sc-heading-area sec-animation sc-mb-45">
+                                        <span class="sub-title"> Drop Me Line ✍️</span>
+                                        <h2 class="title">
+                                            Let’s Start Your Next
+                                            <span class="active-color"> Dream Project</span>
+                                        </h2>
+                                    </div>
+                                    <div class="project-contact d-flex">
+                                        <div class="contact-icon sc-mb-30 sc-mr-30">
+                                            <i class="ri-mail-line"></i>
+                                        </div>
+                                        <div class="contact-text">
+                                            <span class="sub-title d-block sc-mb-5"> Email</span>
+                                            <ul class="list-gap">
+                                                <li>
+                                                    <a class="contact-link" href="mailto:anaseemamin@gmail.com">
+                                                        anaseemamin@gmail.com</a
+                                                    >
+                                                </li>
+                                            </ul>
                                         </div>
                                     </div>
-                                    <div class="col-lg-6 rounded my-3" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
-                                        <div class="d-flex flex-wrap contact-details flex-column rounded">
-                                            <div class="white-color d-flex fw-bold fs-3"><ion-icon name="mail-outline" class="p-2 rounded-circle me-3"></ion-icon> EMAIL</div>
-                                            <p class="white-color m-0 fw-bold ms-5">anaseemamin@gmail.com</p>
+                                    <div class="project-contact d-flex">
+                                        <div class="contact-icon sc-mb-30 sc-mr-30">
+                                            <i class="ri-phone-line"></i>
                                         </div>
-                                    </div>
-                                    <div class="col-lg-12 rounded my-3" data-aos="fade-down" data-aos-anchor-placement="top-bottom">
-                                        <div class="d-flex flex-wrap contact-details flex-column rounded">
-                                            <div class="white-color d-flex fw-bold fs-3"><ion-icon name="location-outline" class="p-2 rounded-circle me-3"></ion-icon> Location</div>
-                                            <p class="white-color m-0 fw-bold ms-5">Egypt - Giza</p>
+                                        <div class="contact-text">
+                                            <span class="sub-title d-block sc-mb-5"> Phone </span>
+                                            <ul class="list-gap">
+                                                <li>
+                                                    <a class="contact-link" href="tel:+201159614802">
+                                                        +(20) 11 596 14 802</a
+                                                    >
+                                                </li>
+                                            </ul>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="social-links text-center mt-5">
-                                    <a href="https://www.facebook.com/profile.php?id=100004560580949" target="_blank" class="rounded-circle position-relative text-decoration-none bg-primary me-2" title="facebook"><ion-icon name="logo-facebook" class="text-light"></ion-icon></a>
-                                    <a href="http://wasap.my/01159614802" target="_blank" class="rounded-circle position-relative text-decoration-none bg-success me-2" title="whatsapp"><ion-icon name="logo-whatsapp" class="text-light"></ion-icon></a>
-                                    <a href="mailto:anaseemamin@gmail.com" target="_blank" class="rounded-circle position-relative text-decoration-none bg-danger me-2" title="mail"><ion-icon name="mail-outline" class="text-light"></ion-icon></a>
-                                    <a href="tel:01159614802" class="rounded-circle position-relative text-decoration-none bg-warning" title="call me"><ion-icon name="call-outline" class="text-dark"></ion-icon></a>
+                            </div>
+                            <div class="col-lg-5" data-sal="slide-right" data-sal-duration="800">
+                                <form class="project-form-box" onsubmit="SendMail(event.preventDefault())">
+                                    <h5 class="title">Get In Touch</h5>
+                                    <div class="project-input sc-mb-20">
+                                        <input type="text" id="name" name="name" placeholder="Name" 
+                                        class="form-input"
+                                        required />
+                                    </div>
+                                    <div class="project-input sc-mb-20">
+                                        <input type="email" id="emailOne" name="email" placeholder="Email" 
+                                        class="form-input"
+                                        required />
+                                    </div>
+                                    <div class="project-input sc-mb-20">
+                                        <input
+                                            type="text"
+                                            id="SubjectTwo"
+                                            name="subject"
+                                            placeholder="Subject"
+                                            class="form-input"
+                                            required=""
+                                        />
+                                    </div>
+                                    <div class="project-input sc-mb-20">
+                                        <textarea
+                                            id="message"
+                                            name="message"
+                                            class="form-input"
+                                            required
+                                            placeholder="Describe your message..."
+                                        ></textarea>
+                                    </div>
+                                    <div class="submit-form">
+                                        <button type="submit" class="position-relative submit-form-btn" value="submit">
+                                            <div class="position-absolute loader w-100 h-100" style="display: none;">
+                                                <img src="assets/icons/loading.gif" width="25" alt="loader">
+                                            </div>
+                                            Submit Now <i class="ri-arrow-right-line"></i>
+                                        </button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--========== Project Section End ==============-->
+
+                <!--========== Roll Section Start ==============-->
+                <div class="sc-roll-section-two sc-pt-55 sc-pb-55">
+                    <div class="slide-roll">
+                        <div class="roll-box">
+                            <div class="roll-item">
+                                <div class="roll-title d-flex align-items-center">
+                                    <div class="poliox-circule">
+                                        <img class="circule-1" src="assets/images/icon/circule1.png" alt="Image" />
+                                        <div class="portal-icon">
+                                            <img class="portal" src="assets/images/icon/portal-1.svg" alt="Icon" />
+                                        </div>
+                                    </div>
+                                    <h2 class="title">Work Together!</h2>
+                                </div>
+                            </div>
+                            <div class="roll-item">
+                                <div class="roll-title d-flex align-items-center">
+                                    <div class="poliox-circule">
+                                        <img class="circule-1" src="assets/images/icon/circule1.png" alt="Image" />
+                                        <div class="portal-icon">
+                                            <img class="portal" src="assets/images/icon/portal-1.svg" alt="Icon" />
+                                        </div>
+                                    </div>
+                                    <h2 class="title">Work Together!</h2>
+                                </div>
+                            </div>
+                            <div class="roll-item">
+                                <div class="roll-title d-flex align-items-center">
+                                    <div class="poliox-circule">
+                                        <img class="circule-1" src="assets/images/icon/circule1.png" alt="Image" />
+                                        <div class="portal-icon">
+                                            <img class="portal" src="assets/images/icon/portal-1.svg" alt="Icon" />
+                                        </div>
+                                    </div>
+                                    <h2 class="title">Work Together!</h2>
+                                </div>
+                            </div>
+                            <div class="roll-item">
+                                <div class="roll-title d-flex align-items-center">
+                                    <div class="poliox-circule">
+                                        <img class="circule-1" src="assets/images/icon/circule1.png" alt="Image" />
+                                        <div class="portal-icon">
+                                            <img class="portal" src="assets/images/icon/portal-1.svg" alt="Icon" />
+                                        </div>
+                                    </div>
+                                    <h2 class="title">Work Together!</h2>
+                                </div>
+                            </div>
+                            <div class="roll-item">
+                                <div class="roll-title d-flex align-items-center">
+                                    <div class="poliox-circule">
+                                        <img class="circule-1" src="assets/images/icon/circule1.png" alt="Image" />
+                                        <div class="portal-icon">
+                                            <img class="portal" src="assets/images/icon/portal-1.svg" alt="Icon" />
+                                        </div>
+                                    </div>
+                                    <h2 class="title">Work Together!</h2>
                                 </div>
                             </div>
                         </div>
+                    </div>
+                </div>
+                <!--========== Roll Section End ==============-->
+                </main>
+                <!--=========== Footer Section Start =========-->
+                <section class="sc-footer-section sc-pt-100 sc-md-pt-80">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-3 col-md-6 col-sm-6 m-auto text-center" data-sal="slide-up" data-sal-duration="300">
+                                <div class="footer-widget footer1-col-1 footer-about sc-md-mb-50">
+                                    <div class="footer-logo sc-mb-35">
+                                        <a href="#"><img src="assets/images/logo.png" alt="Foote Logo" /></a>
+                                    </div>
+                                    <!-- <span> Follow Me</span> -->
+                                    <ul class="about-icon list-gap">
+                                        <li>
+                                            <a href="https://www.facebook.com/anaseem22/" target="_blank"><i class="ri-facebook-line"></i></a>
+                                        </li>
+                                        <li>
+                                            <a href="https://www.instagram.com/__anaseem__70/" target="_blank"><i class="ri-instagram-line"></i></a>
+                                        </li>
+                                        <li>
+                                            <a href="https://github.com/anaseem80" target="_blank"><i class="ri-github-line"></i></a>
+                                        </li>
+                                        <li>
+                                            <a href="https://www.linkedin.com/in/anaseem60/" target="_blank"><i class="ri-linkedin-line"></i></a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <!-- <div
+                                class="col-lg-3 col-md-6 col-sm-6 sc-md-mb-35"
+                                data-sal="slide-up"
+                                data-sal-duration="400"
+                            >
+                                <div class="footer-widget footer1-col-2 footer-menu-area">
+                                    <h5 class="footer-title white-color">Quick Link</h5>
+                                    <div class="row">
+                                        <div class="col-6">
+                                            <ul class="footer-menu-list list-gap">
+                                                <li><a href="about.html">About Me</a></li>
+                                                <li><a href="#">Blog</a></li>
+                                                <li><a href="#">Faq</a></li>
+                                                <li><a href="#">Privacy Policy</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6 col-sm-6" data-sal="slide-up" data-sal-duration="500">
+                                <div class="footer-widget footer1-col-3 footer-menu-area sc-md-mb-35">
+                                    <h5 class="footer-title white-color">Services</h5>
+                                    <ul class="footer-menu-list list-gap">
+                                        <li><a href="#">Branding Design</a></li>
+                                        <li><a href="#">UI/UX Design</a></li>
+                                        <li><a href="#">Motion Graphic</a></li>
+                                        <li><a href="#">Web Development</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6 col-sm-6" data-sal="slide-up" data-sal-duration="600">
+                                <div class="footer-widget footer1-col-4 footer-menu-area">
+                                    <h5 class="footer-title white-color">Newsletter</h5>
+                                    <p class="desc sc-mt-30 sc-mb-20">
+                                        Subscribe to newsletter to get update tips & tutorial in your inbox.
+                                    </p>
+                                    <div class="newsletter-form">
+                                        <input
+                                            type="text"
+                                            id="address"
+                                            name="text"
+                                            placeholder="Enter your address"
+                                            required=""
+                                        />
+                                        <i class="ri-arrow-right-line"></i>
+                                    </div>
+                                </div>
+                            </div> -->
+                            <div class="copyright-area">
+                                <div class="copyright-text text-center sc-mt-55">
+                                    <p class="desc sc-mt-20">
+                                        © Copyright 2024 by <a href="https://www.linkedin.com/in/anaseem60/" target="_blank"> Naseem</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!--=========== Footer Section End =========-->
+            </div>
+        </div>
+
+        <!--Sc Offcanvas Area Start-->
+        <div id="sc-overlay-bg2" class="sc-overlay-bg2"></div>
+        <div class="sc-product-offcanvas-area">
+            <div class="sc-offcanvas-header d-flex align-items-center justify-content-between">
+                <div class="sticky-logo logo-area text-center">
+                    <a href="index.html"><img src="assets/images/logo.png" alt="Logo" /></a>
+                </div>
+                <div class="offcanvas-icon">
+                    <a id="canva_close" href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" width="25px" height="25px">
+                            <path
+                                d="M 9.15625 6.3125 L 6.3125 9.15625 L 22.15625 25 L 6.21875 40.96875 L 9.03125 43.78125 L 25 27.84375 L 40.9375 43.78125 L 43.78125 40.9375 L 27.84375 25 L 43.6875 9.15625 L 40.84375 6.3125 L 25 22.15625 Z"
+                            />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Canvas Mobile Menu start -->
+            <nav class="right_menu_togle mobile-navbar-menu" id="mobile-navbar-menu">
+                <ul class="list-gap sc-mb-20 sc-pl-0">
+                    <li class="menu-item-has-children current-menu-item">
+                        <a class="active" href="#sc-header-sticky">Home</a>
+                    </li>
+                    <li>
+                        <a href="#scroll-about"> About</a>
+                    </li>
+                    <li>
+                        <a href="#"> Projects</a>
+                    </li>
+                    <li>
+                        <a href="#"> Pages</a>
+                    </li>
+                    <li>
+                        <a href="#"> Blog</a>
+                    </li>
+                    <li><a href="#scroll-contact">Contact</a></li>
+                </ul>
+            </nav>
+            <!-- Canvas Menu end -->
+        </div>
+        <!--Sc Offcanvas Area End-->
+
+        <!-- Search Modal Start -->
+        <div aria-hidden="true" id="search-modal" class="modal fade search-modal" role="dialog" tabindex="-1">
+            <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+                <svg class="svg-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" width="30px" height="30px">
+                    <path
+                        d="M 9.15625 6.3125 L 6.3125 9.15625 L 22.15625 25 L 6.21875 40.96875 L 9.03125 43.78125 L 25 27.84375 L 40.9375 43.78125 L 43.78125 40.9375 L 27.84375 25 L 43.6875 9.15625 L 40.84375 6.3125 L 25 22.15625 Z"
+                    />
+                </svg>
+            </button>
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="search-block clearfix">
+                        <form>
+                            <div class="form-group">
+                                <input class="form-control" placeholder="Search Here..." type="text" />
+                            </div>
+                        </form>
                     </div>
                 </div>
             </div>
         </div>
-        <a href="#home"><div class="scroll-top text-color position-fixed py-1 px-2"><i class="fa fa-chevron-up text-light position-relative" style="z-index: 1000;"></i></div></a>
-        <script src="https://kit.fontawesome.com/a1a75d5546.js" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"></script>
-        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-        <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
-        <script>AOS.init();</script>
-        <script src="js/app.js"></script>
-        <script src="JS/vanilla-tilt.js"></script>
+        <!-- Search Modal End -->
+
+        <!-- start scrollUp  -->
+        <div id="scrollUp">
+            <i class="icon-angle_right"></i>
+        </div>
+        <!-- End scrollUp  -->
+
+        <!-- start scrollUp  -->
+        <div class="poliox-scroll-top progress-done">
+            <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
+                <path
+                    d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98"
+                    style="
+                        transition: stroke-dashoffset 10ms linear 0s;
+                        stroke-dasharray: 307.919px, 307.919px;
+                        stroke-dashoffset: 71.1186px;
+                    "
+                ></path>
+            </svg>
+            <div class="poliox-scroll-top-icon">
+                <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    aria-hidden="true"
+                    role="img"
+                    width="1em"
+                    height="1em"
+                    viewBox="0 0 24 24"
+                    data-icon="mdi:arrow-up"
+                    class="iconify iconify--mdi"
+                >
+                    <path
+                        fill="currentColor"
+                        d="M13 20h-2V8l-5.5 5.5l-1.42-1.42L12 4.16l7.92 7.92l-1.42 1.42L13 8v12Z"
+                    ></path>
+                </svg>
+            </div>
+        </div>
+        <!-- End scrollUp  -->
+
+        <!-- Jquery.min js -->
+        <script src="assets/js/jquery.min.js"></script>
+        <!-- Bootstrap.min js -->
+        <script src="assets/js/bootstrap.min.js"></script>
+        <!-- Swiper jS -->
+        <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+        <!-- Imagesloaded-pkgd js -->
+        <script src="assets/js/imagesloaded.pkgd.min.js"></script>
+        <!-- Magnific-popup js -->
+        <script src="assets/js/jquery.magnific-popup.min.js"></script>
+        <!-- Swiper js -->
+        <script src="assets/js/swiper.min.js"></script>
+        <!-- Appear js -->
+        <script src="assets/js/jquery.appear.min.js"></script>
+        <!-- Odometer js -->
+        <script src="assets/js/odometer.min.js"></script>
+        <!-- Sal js -->
+        <script src="assets/js/sal.js"></script>
+        <!-- Gsap js -->
+        <script src="assets/js/gsap.min.js"></script>
+        <!-- Splittext js -->
+        <script src="assets/js/SplitText.min.js"></script>
+        <!-- Scrolltoplugin js -->
+        <script src="assets/js/ScrollToPlugin.min.js"></script>
+        <!-- Scrollsmoother js -->
+        <script src="assets/js/ScrollSmoother.min.js"></script>
+        <!-- Scrolltrigger js -->
+        <script src="assets/js/ScrollTrigger.min.js"></script>
+        <!-- Main js -->
+        <script src="assets/js/main.js"></script>
+        <!-- Toastr -->
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.min.js"></script>
+        <!-- Smooth scroll -->
+        <script async src="https://cdnjs.cloudflare.com/ajax/libs/smoothscroll/1.4.9/SmoothScroll.js"></script>
     </body>
 </html>

@@ -1,0 +1,283 @@
+@font-face {
+    font-family: "icomoon";
+    src: url("../fonts/icomoon.eot?n5v3tr");
+    src: url("../fonts/icomoon.eot?n5v3tr#iefix") format("embedded-opentype"),
+        url("../fonts/icomoon.ttf?n5v3tr") format("truetype"), url("../fonts/icomoon.woff?n5v3tr") format("woff"),
+        url("../fonts/icomoon.svg?n5v3tr#icomoon") format("svg");
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+}
+
+[class^="icon-"],
+[class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: "icomoon" !important;
+    speak: never;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-calender:before {
+    content: "\e93c";
+    color: #6a6c71;
+}
+.icon-check:before {
+    content: "\e93d";
+    color: #6a6c71;
+}
+.icon-quote-icon:before {
+    content: "\e93e";
+    color: #e42032;
+}
+.icon-video-icon:before {
+    content: "\e93f";
+    color: #fff;
+}
+.icon-hamba:before {
+    content: "\e93b";
+}
+.icon-gap_2:before {
+    content: "\e939";
+    color: #e42032;
+}
+.icon-chat:before {
+    content: "\e93a";
+    color: #ff3636;
+}
+.icon-angle_left:before {
+    content: "\e900";
+    color: #fff;
+}
+.icon-angle_right:before {
+    content: "\e901";
+    color: #fff;
+}
+.icon-angle-arrow:before {
+    content: "\e902";
+    color: #6a6c71;
+}
+.icon-angle-left .path1:before {
+    content: "\e903";
+    color: rgb(255, 255, 255);
+    opacity: 0.2;
+}
+.icon-angle-left .path2:before {
+    content: "\e904";
+    margin-left: -1em;
+    color: rgb(255, 255, 255);
+}
+.icon-artifical:before {
+    content: "\e905";
+    color: #e42032;
+}
+.icon-bussness:before {
+    content: "\e906";
+    color: #fff;
+}
+.icon-bussness2:before {
+    content: "\e907";
+    color: #fff;
+}
+.icon-complete:before {
+    content: "\e908";
+    color: #fff;
+}
+.icon-consoltancy:before {
+    content: "\e909";
+    color: #e42032;
+}
+.icon-david:before {
+    content: "\e90a";
+    color: #e42032;
+}
+.icon-david2:before {
+    content: "\e90b";
+    color: #e42032;
+}
+.icon-decide:before {
+    content: "\e90c";
+    color: #fff;
+}
+.icon-expericence:before {
+    content: "\e90d";
+    color: #e42032;
+}
+.icon-facebook:before {
+    content: "\e90e";
+    color: #fff;
+}
+.icon-facebook-2:before {
+    content: "\e90f";
+    color: #6a6c71;
+}
+.icon-financial:before {
+    content: "\e910";
+    color: #fff;
+}
+.icon-happy:before {
+    content: "\e911";
+    color: #fff;
+}
+.icon-happy2:before {
+    content: "\e912";
+    color: #e42032;
+}
+.icon-human:before {
+    content: "\e913";
+    color: #fff;
+}
+.icon-intragram:before {
+    content: "\e914";
+    color: #fff;
+}
+.icon-left-quote:before {
+    content: "\e915";
+    color: #e42032;
+}
+.icon-lifetime:before {
+    content: "\e916";
+    color: #e42032;
+}
+.icon-line:before {
+    content: "\e917";
+    color: #e42032;
+}
+.icon-linkdedin:before {
+    content: "\e918";
+    color: #fff;
+}
+.icon-linkedin-2:before {
+    content: "\e919";
+    color: #6a6c71;
+}
+.icon-mail:before {
+    content: "\e91a";
+    color: #6a6c71;
+}
+.icon-mail2:before {
+    content: "\e91b";
+    color: #e42032;
+}
+.icon-map:before {
+    content: "\e91c";
+    color: #fff;
+}
+.icon-meassage2:before {
+    content: "\e91d";
+    color: #6a6c71;
+}
+.icon-message:before {
+    content: "\e91e";
+    color: #6a6c71;
+}
+.icon-minus:before {
+    content: "\e91f";
+    color: #e42032;
+}
+.icon-phone:before {
+    content: "\e920";
+    color: #6a6c71;
+}
+.icon-phone-2:before {
+    content: "\e921";
+    color: #e42032;
+}
+.icon-play_video:before {
+    content: "\e922";
+    color: #fff;
+}
+.icon-plus:before {
+    content: "\e923";
+    color: #6e7075;
+}
+.icon-proccess:before {
+    content: "\e924";
+    color: #e42032;
+}
+.icon-ready:before {
+    content: "\e925";
+    color: #fff;
+}
+.icon-request:before {
+    content: "\e926";
+    color: #fff;
+}
+.icon-request2:before {
+    content: "\e927";
+    color: #e42032;
+}
+.icon-research:before {
+    content: "\e928";
+    color: #e42032;
+}
+.icon-risk:before {
+    content: "\e929";
+    color: #fff;
+}
+.icon-running:before {
+    content: "\e92a";
+    color: #fff;
+}
+.icon-satisfied:before {
+    content: "\e92b";
+    color: #e42032;
+}
+.icon-search:before {
+    content: "\e92c";
+    color: #6a6c71;
+}
+.icon-send:before {
+    content: "\e92d";
+    color: #6a6c71;
+}
+.icon-share:before {
+    content: "\e92e";
+    color: #6a6c71;
+}
+.icon-slider-arrow:before {
+    content: "\e92f";
+}
+.icon-sliuder-arrow2:before {
+    content: "\e930";
+    color: #fff;
+}
+.icon-startup:before {
+    content: "\e931";
+    color: #fff;
+}
+.icon-stragy:before {
+    content: "\e932";
+    color: #fff;
+}
+.icon-timer:before {
+    content: "\e933";
+    color: #6a6c71;
+}
+.icon-twiter:before {
+    content: "\e934";
+    color: #fff;
+}
+.icon-user:before {
+    content: "\e935";
+    color: #6a6c71;
+}
+.icon-wining:before {
+    content: "\e936";
+    color: #fff;
+}
+.icon-work:before {
+    content: "\e937";
+    color: #fff;
+}
+.icon-youtube:before {
+    content: "\e938";
+    color: #e42032;
+}
