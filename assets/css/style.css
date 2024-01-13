@@ -1,33 +1,5 @@
-/*============================================================
-[Master Stylesheet]
 
-* Template : Poliox - HTML Template
-* Author : SoftCoderes
-* Version:        1.0
-* Author URI : http://www.softcoders.net/ 
-
-=========================================================*/
 /*=======================================================
-TABLE OF CONTENTS:
-01 global Style
-02 Spacing CSS
-====== section stylsheet ======
-03 header section
-04 banner section
-05 about section
-06 cta section
-07 breadcrumb section
-08 testimonial section
-09 pricing section
-10 service section
-11 portfolio section
-12 button section
-13 canvas section
-14 blog section
-15 blog-details section
-16 project section
-17 roll section
-18 footer section
 ====== responsive stylsheet ======
 19 responsive style  */
 @import url("https://fonts.googleapis.com/css2?family=Lexend:wght@200;300;400;500;600;700;800;900&display=swap");
@@ -672,8 +644,8 @@ PAGE LOAD ANIMATION
   color: #243342;
 }
 
-/*-- poliox-scroll-top start --*/
-.poliox-scroll-top {
+/*-- naseem-scroll-top start --*/
+.naseem-scroll-top {
   position: fixed;
   right: 30px;
   bottom: 25px;
@@ -690,12 +662,12 @@ PAGE LOAD ANIMATION
   transition: all 0.2s linear, margin-right 0s;
 }
 
-.poliox-scroll-top.progress-done {
+.naseem-scroll-top.progress-done {
   visibility: visible;
   transform: translateY(0);
 }
 
-.poliox-scroll-top-icon {
+.naseem-scroll-top-icon {
   position: absolute;
   left: 0;
   top: 0;
@@ -708,11 +680,11 @@ PAGE LOAD ANIMATION
   color: #4dffaf;
 }
 
-.poliox-scroll-top > svg path {
+.naseem-scroll-top > svg path {
   fill: none;
 }
 
-.poliox-scroll-top > svg.progress-circle path {
+.naseem-scroll-top > svg.progress-circle path {
   stroke: #4dffaf;
   stroke-width: 4;
   box-sizing: border-box;
@@ -720,11 +692,11 @@ PAGE LOAD ANIMATION
 }
 
 @media (min-width: 1px) {
-  .poliox-scroll-top.progress-done {
+  .naseem-scroll-top.progress-done {
     opacity: 1;
   }
 }
-/*-- poliox-scroll-top end --*/
+/*-- naseem-scroll-top end --*/
 @-webkit-keyframes letters-loading {
   0%, 75%, 100% {
     opacity: 0;
@@ -841,17 +813,7 @@ PAGE LOAD ANIMATION
     -webkit-transform: rotate(10deg);
   }
 }
-/**
-*
-* -----------------------------------------------------------------------------
-*
-* Author : softcoderes
-* Author URL : http://www.softcoders.sc-net/
-* Version: 1-0;
-*
-* -----------------------------------------------------------------------------
-*
-**/
+
 .sc-padding-0 {
   padding: 0;
 }
@@ -29000,7 +28962,7 @@ main {
   transform: translateY(0);
 }
 .banner-section .banner-social .social-media li i:hover {
-  background-color: #4dffaf;
+  background-color: #4d59ff;
   border-color: transparent;
   color: #261d48;
   transform: translateY(-5px);
@@ -29039,15 +29001,15 @@ main {
 .banner-wrapper {
   position: relative;
 }
-.banner-wrapper .poliox-circule {
+.banner-wrapper .naseem-circule {
   position: absolute;
   bottom: 180px;
   left: -65px;
 }
-.banner-wrapper .poliox-circule .circule-1 {
+.banner-wrapper .naseem-circule .circule-1 {
   animation: rotateImg 15s infinite linear;
 }
-.banner-wrapper .poliox-circule .portal-icon {
+.banner-wrapper .naseem-circule .portal-icon {
   position: absolute;
   transform: translate(-50%, -50%);
   left: 50%;
@@ -30709,16 +30671,16 @@ main {
   margin-left: 0;
   min-width: 40px;
 }
-.sc-roll-section-two .slide-roll .roll-box .roll-item .poliox-circule {
+.sc-roll-section-two .slide-roll .roll-box .roll-item .naseem-circule {
   position: relative;
   margin-right: 40px;
 }
-.sc-roll-section-two .slide-roll .roll-box .roll-item .poliox-circule .circule-1 {
+.sc-roll-section-two .slide-roll .roll-box .roll-item .naseem-circule .circule-1 {
   min-width: 130px;
   margin-left: 0;
   animation: rotateImg 15s infinite linear;
 }
-.sc-roll-section-two .slide-roll .roll-box .roll-item .poliox-circule .portal-icon {
+.sc-roll-section-two .slide-roll .roll-box .roll-item .naseem-circule .portal-icon {
   background: #4dffaf;
   width: 50px;
   height: 50px;
@@ -31040,7 +31002,7 @@ main {
     font-size: 65px;
     line-height: 80px;
   }
-  .banner-wrapper .poliox-circule {
+  .banner-wrapper .naseem-circule {
     bottom: 150px;
     left: -25px;
   }
@@ -31154,7 +31116,7 @@ main {
   .banner-wrapper {
     text-align: center !important;
   }
-  .banner-wrapper .poliox-circule {
+  .banner-wrapper .naseem-circule {
     bottom: 220px;
     left: 0;
   }
@@ -31170,7 +31132,7 @@ main {
   .sc-roll-section-two .slide-roll .roll-box .roll-item .title {
     font-size: 30px !important;
   }
-  .sc-roll-section-two .slide-roll .roll-box .roll-item .poliox-circule .circule-1 {
+  .sc-roll-section-two .slide-roll .roll-box .roll-item .naseem-circule .circule-1 {
     min-width: 60px;
   }
   /* .header-button {
@@ -31382,7 +31344,7 @@ main {
   .roll-gap {
     margin-left: 0;
   }
-  .roll-item2 .poliox-circule {
+  .roll-item2 .naseem-circule {
     margin-right: 25px;
   }
   .banner-left-content .banner-title {
