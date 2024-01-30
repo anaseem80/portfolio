@@ -31192,6 +31192,13 @@ main {
     height: 55px;
     line-height: 47px;
     padding: 0 35px;
+    font-size: 15px;
+  }
+  .ab-date{
+    margin-bottom: 15px;
+  }
+  .ab-right-content .ab-experience{
+    font-size: 18px;
   }
   .header-logo-area .sc-header-logo img{
     width: 100px;
