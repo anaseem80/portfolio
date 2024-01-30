@@ -28923,7 +28923,7 @@ main {
 .banner-section {
   background-color: #1c1c1c;
   position: relative;
-  padding-top: 105px;
+  padding: 205px 0;
 }
 .banner-section::before {
   position: absolute;
